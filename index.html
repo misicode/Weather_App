@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <div class="container-weather">
+      <form class="container-search" id="form-city">
+        <input class="search" id="city" type="text" />
+        <button type="submit">
+          Search
+        </button>
+        <button type="button" id="current">
+          Current
+        </button>
+      </form>
+      <div class="container-header">
+        <div class="header-section">
+          <h1 id="title-city">Lima, PE</h1>
+          <p id="date"></p>
+        </div>
+        <div class="header-section weather">
+          <img src="https://img.icons8.com/officel/452/sun.png" width="80px" />
+          <div class="weather-today">
+            <h2 id="temperature">
+              28° C
+            </h2>
+            <p class="climate" id="weather">
+              Sunny
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container-content">
+        <ul>
+          <li>
+            <h3>
+              Monday
+            </h3>
+            <img
+              src="https://img.icons8.com/officel/452/sun.png"
+              width="60px"
+            />
+            <p>30° C</p>
+          </li>
+          <li>
+            <h3>
+              Tuesday
+            </h3>
+            <img
+              src="https://img.icons8.com/officel/452/partly-cloudy-day.png"
+              width="60px"
+            />
+            <p>27° C</p>
+          </li>
+          <li>
+            <h3>
+              Wednesday
+            </h3>
+            <img
+              src="https://img.icons8.com/officel/452/torrential-rain.png"
+              width="60px"
+            />
+            <p>23° C</p>
+          </li>
+          <li>
+            <h3>
+              Thursday
+            </h3>
+            <img
+              src="https://img.icons8.com/officel/452/torrential-rain.png"
+              width="60px"
+            />
+            <p>23° C</p>
+          </li>
+          <li>
+            <h3>
+              Friday
+            </h3>
+            <img
+              src="https://img.icons8.com/officel/452/torrential-rain.png"
+              width="60px"
+            />
+            <p>23° C</p>
+          </li>
+        </ul>
+      </div>
+
+      <hr />
+      <p class="credits">
+        Coded by Alessandra Mincia
+      </p>
+    </div>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
