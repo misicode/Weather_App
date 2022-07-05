@@ -14,10 +14,19 @@ const days = [
   date.textContent = `${
     days[now.getDay() - 1]
   } ${now.getHours()}:${now.getMinutes()}`;
+  let humidity = document.querySelector("#humidity");
+  let wind = document.querySelector("#wind");
+  let icon = document.querySelector("#icon");
   
   let form = document.querySelector("#form-city");
   form.addEventListener("submit", changeCity);
   
+  function init() {
+    let city = "Lima";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(showData);
+  }
+
   function changeCity(event) {
     event.preventDefault();
     let city = document.querySelector("#city");
@@ -35,6 +44,12 @@ const days = [
     let weatherElement = response.data.weather[0].main;
     let weather = document.querySelector("#weather");
     weather.innerHTML = weatherElement;
+    let humidityElement = response.data.main.humidity;
+    humidity.innerHTML = "Humidity: " + humidityElement + "%";
+    let windElement = response.data.wind.speed;
+    wind.innerHTML = "Wind: " + windElement + " km/h";
+    let iconElement = response.data.weather[0].icon;
+    icon.src = `http://openweathermap.org/img/wn/${iconElement}@2x.png`;
   }
   
   let btnCurrent = document.querySelector("#current");
@@ -52,3 +67,4 @@ const days = [
     navigator.geolocation.getCurrentPosition(showPosition);
   }
   
+  window.onload = init();
