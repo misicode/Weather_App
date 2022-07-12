@@ -15,6 +15,8 @@ let wind = document.getElementById("wind");
 let city = document.getElementById("city");
 let btnSearch = document.getElementById("btnSearch");
 btnSearch.onclick = changeCity;
+let btnLocation = document.getElementById("btnLocation");
+btnLocation.onclick = getCurrentPosition;
 
 const days = {
     "0": "Sunday",
@@ -149,6 +151,20 @@ function showForecast(response) {
         let climate = element.querySelector(".clim-week");
         climate.innerHTML = response.data.daily[i].weather[0].main;
     });
+}
+
+function showPosition(position) {
+    let latitude = position.coords.latitude;
+    let longitude = position.coords.longitude;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl)
+        .then(showData)
+        .catch(err => console.error(err));
+}
+  
+function getCurrentPosition(event) {
+    event.preventDefault();
+    navigator.geolocation.getCurrentPosition(showPosition);
 }
 
 // Función para darle formato a la fecha
