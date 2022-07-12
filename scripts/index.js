@@ -105,6 +105,7 @@ const iconMap = {
 
 function init() {
     formatDate();
+    updateBackground();
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Lima&appid=${ apiKey }&units=metric`;
     axios.get(apiUrl)
         .then(showData)
@@ -179,6 +180,15 @@ function formatTime() {
         return `${ dateNow.getHours() }:${ dateNow.getMinutes() } AM`
     else
         return `${ dateNow.getHours() }:${ dateNow.getMinutes() } PM`
+}
+
+function updateBackground() {
+    if (dateNow.getHours() >= 20 || dateNow.getHours() <= 6)
+        (document.querySelector(".card")).style.background = "url('../public/wallpaper_evening.jpg') no-repeat center 80%";
+    else if (dateNow.getHours() <= 16)
+        (document.querySelector(".card")).style.background = "url('../public/wallpaper_morning.jpg') no-repeat center 80%";
+    else
+        (document.querySelector(".card")).style.background = "url('../public/wallpaper_afternoon.jpg') no-repeat center 80%";
 }
 
 window.onload = init;
