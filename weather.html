@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+    <title>Weather</title>
+</head>
+<body>
+    <div class="app">
+        <div class="container">
+            <div class="card">
+                <section class="weather-today">
+                    <div class="content">
+                        <h6>Today</h6>
+                        <h4 id="date"></h4>
+                        <div class="content-info">
+                            <div class="info-temp">
+                                <h1 id="temperature"></h1>
+                                <span>°</span>
+                                <span>C</span>
+                            </div>
+                            <div class="info-clim">
+                                <i id="icon"></i>
+                                <p id="climate"></p>
+                            </div>
+                            <div class="info-details">
+                                <h2 id="place"></h2>
+                                <p id="daytime"></p>
+                                <p id="humidity"></p>
+                                <p id="wind"></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="weather-week">
+                    <div class="content">
+                        <div class="search-bar">
+                            <input id="city" type="text" placeholder="Enter a city..." />
+                            <button id="btnSearch">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                            <button>
+                                <i class="fa-solid fa-location-dot"></i>
+                            </button>
+                        </div>
+                        <div class="content-week">
+                            <ul>
+                                <li>
+                                    <div>
+                                        <h3></h3>
+                                        <p class="temp-week"></p>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid"></i>
+                                        <p class="clim-week"></p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <h3></h3>
+                                        <p class="temp-week"></p>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid"></i>
+                                        <p class="clim-week"></p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <h3></h3>
+                                        <p class="temp-week"></p>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid"></i>
+                                        <p class="clim-week"></p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <h3></h3>
+                                        <p class="temp-week"></p>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid"></i>
+                                        <p class="clim-week"></p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <h3></h3>
+                                        <p class="temp-week"></p>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid"></i>
+                                        <p class="clim-week"></p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <p class="credits">
+                Coded by Alessandra Mincia
+            </p>
+        </div>
+    </div>
+    <script src="scripts/index.js"></script>
+</body>
+</html>

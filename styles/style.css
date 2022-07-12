@@ -1,104 +1,172 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+:root {
+    --text-light: #FFFFFF;
+    --text-font: 'Poppins', sans-serif;
+    --credits-font: 'Josefin Sans', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 body {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  font-family: "Josefin Sans", sans-serif;
-  background-color: #222831;
-  align-items: center;
-  justify-content: center;
+    font-family: var(--text-font);
+    letter-spacing: 1px;
+    background-color: #222831;
 }
 
-.container-weather {
-  padding-top: 40px;
-  width: 900px;
-  text-align: center;
-  background-color: #f7f7f7;
-  border: 1px solid;
-  border-radius: 10px;
+.app {
+    height: 100vh;
 }
 
-.container-search {
-  margin-bottom: 30px;
+.container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+.card {
+    display: grid;
+    width: 70%;
+    grid-template-columns: 1fr 1fr;
+    background: url("../public/wallpaper_evening.jpg") no-repeat center 80%;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.content {
+    padding: 30px 50px;
+    color: var(--text-light);
+}
+
+.content > h6 {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.content > h4 {
+    font-size: 20px;
+}
+
+.content-info {
+    display: grid;
+    padding-top: 150px;
+    grid-template-columns: 2fr 2fr 5fr;
+}
+
+.info-temp {
+    display: flex;
+}
+
+.info-temp > h1 {
+    margin-right: 5px;
+    font-size: 90px;
+    font-weight: 300;
+}
+
+.info-temp > span:nth-child(2) {
+    line-height: 80px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.info-temp > span:nth-child(3) {
+    line-height: 75px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.info-clim {
+    align-self: center;
+    justify-self: center;
+}
+
+.info-clim > img {
+    display: block;
+    margin: 0 auto;
+}
+
+.info-details {
+    margin-left: 10px;
+    align-self: center;
+}
+
+.info-details > p {
+    font-size: 14px;
+}
+
+#location {
+    font-size: 30px;
+}
+
+.weather-week {
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12px);
+}
+
+.search-bar {
+    display: flex;
+}
+
+.search-bar > input {
+    padding: 6px 10px;
+    width: 100%;
+}
+
+.search-bar > button {
+    padding: 8px 5px;
+    width: 40px;
+    background-color: #eaeaea;
+    border: 1px solid rgba(1, 1, 1, 0.4);
+}
+
+.search-bar > button:nth-child(2) {
+    border-radius: 0 10px 10px 0;
+}
+
+.search-bar > button:nth-child(3) {
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.content-week {
+    margin-top: 40px;
+}
+
+.content-week > ul {
+    list-style: none;
+}
+
+.content-week > ul > li {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+
+
 
 .search {
-  padding: 6px 10px;
-  width: 500px;
-  border: 1px solid rgba(1, 1, 1, 0.4);
-  border-radius: 5px;
-}
-
-.container-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.header-section {
-  padding: 0px 45px;
-}
-
-h1 {
-  font-weight: 100;
-}
-
-.weather {
-  display: flex;
-}
-
-.weather-today {
-  margin-left: 20px;
-}
-
-h2 {
-  margin: 5px 0px;
-  padding-top: 4px;
-  font-size: 34px;
-}
-
-.climate {
-  margin: 6px 0px;
-  font-size: 22px;
-}
-
-.container-content {
-  margin-bottom: 35px;
-}
-
-ul {
-  padding-inline-start: 0px;
-}
-
-li {
-  display: inline-block;
-  padding: 10px 40px;
-}
-
-p {
-  margin: 4px 0;
-}
-
-button {
-  padding: 8px 30px;
-  background-color: #eaeaea;
-  border: 1px solid rgba(1, 1, 1, 0.4);
-  border-radius: 20px;
+    border: 1px solid rgba(1, 1, 1, 0.4);
+    border-radius: 5px;
 }
 
 button:hover {
-  background-color: #dedede;
-  cursor: pointer;
+    background-color: #dedede;
+    cursor: pointer;
 }
 
 hr {
-  margin-top: 40px;
-  border-color: rgba(1, 1, 1, 0.12);
+    margin-top: 40px;
+    border-color: rgba(1, 1, 1, 0.12);
 }
 
 .credits {
-  margin: 15px 0;
-  font-size: 11px;
+    margin: 15px 0 0;
+    font-size: 11px;
 }
