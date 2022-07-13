@@ -127,8 +127,8 @@ function showData(response) {
     icon.setAttribute("class", iconMap[response.data.weather[0].icon]);
     climate.innerHTML = response.data.weather[0].main;
     daytime.innerHTML = `Last update: ${ formatTime() }`;
-    humidity.innerHTML = `Humidity: ${ response.data.main.humidity } %`;
-    wind.innerHTML = `Wind: ${ response.data.wind.speed } km/h`;
+    humidity.innerHTML = `${ response.data.main.humidity } %`;
+    wind.innerHTML = `${ response.data.wind.speed } km/h`;
     updateForecast(response.data.coord);
 }
 
@@ -144,9 +144,11 @@ function showForecast(response) {
     let timeWeek = document.querySelectorAll("li");
     timeWeek.forEach( (element, i) => {
         let day = element.querySelector("h3");
-        day.innerHTML = days[dateNow.getDay() + (i+1)];
-        let temp = element.querySelector(".temp-week");
-        temp.innerHTML = `${ Math.round(response.data.daily[i].temp.min) }°C - ${ Math.round(response.data.daily[i].temp.max) }°C`;
+        day.innerHTML = days[(dateNow.getDay() + (i+1)) % 7];
+        let tempMax = element.querySelector(".temp-max");
+        let tempMin = element.querySelector(".temp-min");
+        tempMax.innerHTML = `${ Math.round(response.data.daily[i].temp.max) }°C`;
+        tempMin.innerHTML = `${ Math.round(response.data.daily[i].temp.min) }°C`;
         let icon = element.querySelector("i");
         icon.setAttribute("class", iconMap[response.data.daily[i].weather[0].icon]);
         let climate = element.querySelector(".clim-week");
@@ -183,9 +185,9 @@ function formatTime() {
 }
 
 function updateBackground() {
-    if (dateNow.getHours() >= 20 || dateNow.getHours() <= 6)
+    if (dateNow.getHours() >= 19 || dateNow.getHours() <= 6)
         (document.querySelector(".card")).style.background = "url('../public/wallpaper_evening.jpg') no-repeat center 80%";
-    else if (dateNow.getHours() <= 16)
+    else if (dateNow.getHours() <= 17)
         (document.querySelector(".card")).style.background = "url('../public/wallpaper_morning.jpg') no-repeat center 80%";
     else
         (document.querySelector(".card")).style.background = "url('../public/wallpaper_afternoon.jpg') no-repeat center 80%";
