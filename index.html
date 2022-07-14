@@ -25,7 +25,7 @@
                                 <p>Wind: <span id="wind"></span></p>
                             </div>
                             <div class="info-general">
-                                <div>
+                                <div class="flex-center">
                                     <i id="icon"></i>
                                     <div class="info-temp">
                                         <h1 id="temperature"></h1>
@@ -44,69 +44,120 @@
                             <button id="btnSearch">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </button>
-                            <input id="city" type="search" placeholder="Enter a city..." />
+                            <input id="city" type="search" placeholder="Enter a city..." onkeydown="if (event.keyCode == 13) document.getElementById('btnSearch').click()" />
                             <button id="btnLocation">
                                 <i class="fa-solid fa-location-dot"></i>
                             </button>
                         </div>
                         <div class="content-week">
-                            <ul>
-                                <li>
-                                    <div>
-                                        <h3></h3>
-                                        <p class="temp-max"></p>
-                                        <p class="temp-min"></p>
-                                    </div>
-                                    <div>
+                            <div class="forecast-card">
+                                <h3></h3>
+                                <div class="forecast-info">
+                                    <div class="flex-center">
                                         <i class="fa-solid"></i>
-                                        <p class="clim-week"></p>
+                                        <div>
+                                            <p class="temp-max"></p>
+                                            <p class="temp-min"></p>
+                                        </div>
                                     </div>
-                                </li>
-                                <li>
-                                    <div>
-                                        <h3></h3>
-                                        <p class="temp-max"></p>
-                                        <p class="temp-min"></p>
+                                    <p class="clim-week"></p>
+                                    <div class="forecast-details">
+                                        <hr />
+                                        <p>Humidity: <span class="humi-week"></span></p>
+                                        <p>Wind: <span class="wind-week"></span></p>
                                     </div>
-                                    <div>
+                                </div>
+                            </div>
+                            <div class="forecast-card">
+                                <h3></h3>
+                                <div class="forecast-info">
+                                    <div class="flex-center">
                                         <i class="fa-solid"></i>
-                                        <p class="clim-week"></p>
+                                        <div>
+                                            <p class="temp-max"></p>
+                                            <p class="temp-min"></p>
+                                        </div>
                                     </div>
-                                </li>
-                                <li>
-                                    <div>
-                                        <h3></h3>
-                                        <p class="temp-max"></p>
-                                        <p class="temp-min"></p>
+                                    <p class="clim-week"></p>
+                                    <div class="forecast-details">
+                                        <hr />
+                                        <p>Humidity: <span class="humi-week"></span></p>
+                                        <p>Wind: <span class="wind-week"></span></p>
                                     </div>
-                                    <div>
+                                </div>
+                            </div>
+                            <div class="forecast-card">
+                                <h3></h3>
+                                <div class="forecast-info">
+                                    <div class="flex-center">
                                         <i class="fa-solid"></i>
-                                        <p class="clim-week"></p>
+                                        <div>
+                                            <p class="temp-max"></p>
+                                            <p class="temp-min"></p>
+                                        </div>
                                     </div>
-                                </li>
-                                <li>
-                                    <div>
-                                        <h3></h3>
-                                        <p class="temp-max"></p>
-                                        <p class="temp-min"></p>
+                                    <p class="clim-week"></p>
+                                    <div class="forecast-details">
+                                        <hr />
+                                        <p>Humidity: <span class="humi-week"></span></p>
+                                        <p>Wind: <span class="wind-week"></span></p>
                                     </div>
-                                    <div>
+                                </div>
+                            </div>
+                            <div class="forecast-card">
+                                <h3></h3>
+                                <div class="forecast-info">
+                                    <div class="flex-center">
                                         <i class="fa-solid"></i>
-                                        <p class="clim-week"></p>
+                                        <div>
+                                            <p class="temp-max"></p>
+                                            <p class="temp-min"></p>
+                                        </div>
                                     </div>
-                                </li>
-                                <li>
-                                    <div>
-                                        <h3></h3>
-                                        <p class="temp-max"></p>
-                                        <p class="temp-min"></p>
+                                    <p class="clim-week"></p>
+                                    <div class="forecast-details">
+                                        <hr />
+                                        <p>Humidity: <span class="humi-week"></span></p>
+                                        <p>Wind: <span class="wind-week"></span></p>
                                     </div>
-                                    <div>
+                                </div>
+                            </div>
+                            <div class="forecast-card">
+                                <h3></h3>
+                                <div class="forecast-info">
+                                    <div class="flex-center">
                                         <i class="fa-solid"></i>
-                                        <p class="clim-week"></p>
+                                        <div>
+                                            <p class="temp-max"></p>
+                                            <p class="temp-min"></p>
+                                        </div>
                                     </div>
-                                </li>
-                            </ul>
+                                    <p class="clim-week"></p>
+                                    <div class="forecast-details">
+                                        <hr />
+                                        <p>Humidity: <span class="humi-week"></span></p>
+                                        <p>Wind: <span class="wind-week"></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="forecast-card">
+                                <h3></h3>
+                                <div class="forecast-info">
+                                    <div class="flex-center">
+                                        <i class="fa-solid"></i>
+                                        <div>
+                                            <p class="temp-max"></p>
+                                            <p class="temp-min"></p>
+                                        </div>
+                                    </div>
+                                    <p class="clim-week"></p>
+                                    <div class="forecast-details">
+                                        <hr />
+                                        <p>Humidity: <span class="humi-week"></span></p>
+                                        <p>Wind: <span class="wind-week"></span></p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
