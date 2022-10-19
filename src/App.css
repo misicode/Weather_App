@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #ffffffba;
+  --auxiliar-color: rgba(255, 255, 255, 0.25);
+  --auxiliar-hover-color: rgba(255, 255, 255, 0.45);
+  --icon-color: rgba(255, 255, 255, 0.3);
+  --bar-color: rgba(0, 0, 0, 0.15);
+  --hr-color: rgba(255, 255, 255, 0.08);
+  --text-font: "Poppins", sans-serif;
+  --credits-font: "Josefin Sans", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--text-font);
+  letter-spacing: 1px;
+  background-color: #322a5d;
+}
+
+.app {
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  display: grid;
+  width: 70%;
+  grid-template-columns: 1fr 1fr;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 4px 4px 12px;
+  background: url("/public/wallpaper_evening.jpg") no-repeat center 85%;
+}
+
+.content {
+  padding: 30px 50px;
+  color: var(--primary-color);
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+/***********************************************************
+ * SECCIÓN WEATHER TODAY
+ ***********************************************************/
+
+.weather-today > div > h6 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.weather-today > div > h4 {
+  font-size: 19px;
+}
+
+.content-info {
+  display: grid;
+  margin-top: 300px;
+  grid-template-columns: 2fr 1fr;
+}
+
+.info-details > h2 {
+  font-size: 29px;
+}
+
+#daytime {
+  margin-bottom: 5px;
+}
+
+.info-details > p {
+  font-size: 14px;
+  color: var(--secondary-color);
+}
+
+.info-details > p > span,
+.forecast-details > p > span {
+  color: var(--primary-color);
+}
+
+.info-general {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+#icon {
+  display: block;
+  margin: auto 10px auto 0;
+  font-size: 60px;
+  color: var(--icon-color);
+}
+
+.info-temp {
+  display: flex;
+}
+
+.info-temp > h1 {
+  margin-right: 5px;
+  font-size: 55px;
+  font-weight: 300;
+}
+
+.info-temp > span:nth-child(2) {
+  line-height: 55px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.info-temp > span:nth-child(3) {
+  line-height: 55px;
+  font-family: var(--credits-font);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.info-general > p {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+  align-self: flex-start;
+  font-size: 19px;
+}
+
+/***********************************************************
+ * SECCIÓN WEATHER WEEK
+ ***********************************************************/
+
+.weather-week {
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 0 10px 10px 0;
+}
+
+.content-options {
+  display: flex;
+}
+
+#city {
+  width: 100%;
+  padding: 6px 10px;
+  letter-spacing: 1px;
+  color: var(--primary-color);
+  background: var(--bar-color);
+  border: none;
+  border-radius: 0 10px 10px 0;
+}
+
+#city::placeholder {
+  color: var(--secondary-color);
+}
+
+#city:focus {
+  outline: none;
+}
+
+#city::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 10px;
+  width: 10px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIwIiBoZWlnaHQ9IjMzOSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgb3ZlcmZsb3c9ImhpZGRlbiI+PGRlZnM+PGNsaXBQYXRoIGlkPSJjbGlwMCI+PHJlY3QgeD0iMjcxIiB5PSIxNzgiIHdpZHRoPSIzMjAiIGhlaWdodD0iMzM5Ii8+PC9jbGlwUGF0aD48L2RlZnM+PGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwKSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTI3MSAtMTc4KSI+PHBhdGggZD0iTTMxMC4zMDkgMzYxLjA2MkMzMjIuNzk3IDM3My41NSAzMjIuNzk3IDM5My43ODEgMzEwLjMwOSA0MDYuMjY5IDMwNC4xMTUgNDEyLjUxMyAyOTUuOTIzIDQxNS42MSAyODcuNzMgNDE1LjYxIDI3OS41MzggNDE1LjYxIDI3MS4zNjYgNDEyLjQ4OCAyNjUuMTMyIDQwNi4yNDRMMTU5Ljg1IDMwMS4wMTggNTQuNTc4OCA0MDYuMjE5QzQ4LjMzNDcgNDEyLjUxMyA0MC4xNTI0IDQxNS42MSAzMS45NyA0MTUuNjEgMjMuNzg3NyA0MTUuNjEgMTUuNjE1NCA0MTIuNTEzIDkuMzY2MjIgNDA2LjIxOS0zLjEyMjA3IDM5My43MzEtMy4xMjIwNyAzNzMuNSA5LjM2NjIyIDM2MS4wMTJMMTE0LjY2OCAyNTUuNzEgOS4zNjYyMiAxNTAuNDU5Qy0zLjEyMjA3IDEzNy45NzEtMy4xMjIwNyAxMTcuNzQgOS4zNjYyMiAxMDUuMjUxIDIxLjg1NDUgOTIuNzYzIDQyLjA4NTYgOTIuNzYzIDU0LjU3MzggMTA1LjI1MUwxNTkuODUgMjEwLjYwMyAyNjUuMTUxIDEwNS4zMDFDMjc3LjY0IDkyLjgxMyAyOTcuODcxIDkyLjgxMyAzMTAuMzU5IDEwNS4zMDEgMzIyLjg0NyAxMTcuNzkgMzIyLjg0NyAxMzguMDIxIDMxMC4zNTkgMTUwLjUwOUwyMDUuMDU4IDI1NS44MSAzMTAuMzA5IDM2MS4wNjJaIiBmaWxsPSIjRkZGRkZGIiB0cmFuc2Zvcm09Im1hdHJpeCgxLjAwMDk0IDAgMCAxIDI3MSA5MS4xNjk0KSIvPjwvZz48L3N2Zz4=);
+  background-size: 10px 10px;
+}
+
+#city:focus::-webkit-search-cancel-button {
+  transition: all 200ms;
+}
+
+.content-options > button {
+  padding: 8px 5px;
+  width: 40px;
+  color: var(--primary-color);
+  background-color: var(--auxiliar-color);
+  border: none;
+}
+
+.content-options > button:hover {
+  background-color: var(--auxiliar-hover-color);
+  cursor: pointer;
+  transition: all 200ms;
+}
+
+#btnSearch {
+  border-radius: 10px 0 0 10px;
+}
+
+#btnLocation {
+  margin-left: 20px;
+  border-radius: 10px;
+}
+
+.content-week {
+  display: grid;
+  margin-top: 40px;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 15px;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 25px;
+}
+
+.forecast-card {
+  padding: 10px 0;
+  background: var(--bar-color);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.forecast-card > h3 {
+  margin-bottom: 7px;
+  font-size: 16px;
+}
+
+.forecast-info {
+  display: grid;
+  grid-template-rows: 2fr 1fr 2fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.forecast-info > div > i {
+  margin-right: 10px;
+  font-size: 35px;
+  color: var(--icon-color);
+}
+
+.temp-max,
+.temp-min {
+  font-size: 13px;
+}
+
+.temp-min {
+  color: var(--secondary-color);
+}
+
+.clim-week {
+  font-size: 14px !important;
+}
+
+.forecast-details {
+  width: 100%;
+  font-size: 12px;
+  color: var(--secondary-color);
+}
+
+.forecast-details > hr {
+  margin: 4px 0 8px;
+  background-color: var(--hr-color);
+  border-color: var(--hr-color);
+}
+
+/***********************************************************
+ * SECCIÓN FOOTER
+ ***********************************************************/
+
+.credits {
+  margin: 17px 0 0;
+  font-size: 11px;
+  color: var(--secondary-color);
+}
+
+.credits > a {
+  font-weight: 600;
+  color: var(--primary-color);
+  text-decoration: none;
+}
