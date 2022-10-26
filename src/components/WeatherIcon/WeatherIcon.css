@@ -1,0 +1,8 @@
+.info-general canvas {
+    display: block;
+    margin: auto 10px auto 0 !important;
+}
+
+.forecast-info > div > canvas {
+    margin-right: 10px;
+}

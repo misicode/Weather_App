@@ -1,0 +1,8 @@
+.weather-today > div > p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.weather-today > div > h2 {
+    font-size: 19px;
+}

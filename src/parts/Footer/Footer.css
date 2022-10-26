@@ -1,0 +1,11 @@
+.credits {
+    margin: 17px 0 0;
+    font-size: 11px;
+    color: var(--secondary-color);
+}
+
+.credits > a {
+    font-weight: 600;
+    color: var(--primary-color);
+    text-decoration: none;
+}

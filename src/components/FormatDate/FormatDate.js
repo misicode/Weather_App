@@ -1,3 +1,6 @@
+import '../../assets/Variables.css';
+import './FormatDate.css';
+
 export default function FormatDate(props) {
     const DAYS = {
         "0": "Sunday",
@@ -58,8 +61,8 @@ export default function FormatDate(props) {
 
     return (
         <>
-            <h6>Today</h6>
-            <h4 id="date">{ DAYS[props.date.getDay()] }, { ORDER_DAYS[props.date.getDate()] } { MONTHS[props.date.getMonth()] } { props.date.getFullYear() }</h4>
+            <p>Today</p>
+            <h2>{ DAYS[props.date.getDay()] }, { ORDER_DAYS[props.date.getDate()] } { MONTHS[props.date.getMonth()] } { props.date.getFullYear() }</h2>
         </>
     );
 }  

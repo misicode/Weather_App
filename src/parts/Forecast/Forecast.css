@@ -1,0 +1,8 @@
+.content-week {
+    display: grid;
+    margin-top: 40px;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15px;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 25px;
+}
