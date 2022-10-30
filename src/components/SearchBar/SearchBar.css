@@ -55,3 +55,9 @@ button[type="button"] {
     margin-left: 20px;
     border-radius: 10px;
 }
+
+@media only screen and (max-width: 580px) {
+    input[type="search"] {
+        font-size: 11px;
+    }
+}
