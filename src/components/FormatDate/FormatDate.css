@@ -6,3 +6,29 @@
 .weather-today > div > h2 {
     font-size: 19px;
 }
+
+@media only screen and (max-width: 758px) {
+    .weather-today > div > p {
+        font-size: 12px;
+    }
+
+    .weather-today > div > h2 {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .weather-today > div > p {
+        font-size: 11px;
+    }
+
+    .weather-today > div > h2 {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .weather-today > div > h2 {
+        font-size: 13px;
+    }
+}

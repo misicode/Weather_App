@@ -2,7 +2,14 @@
     display: grid;
     margin-top: 40px;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 15px;
+    column-gap: 20px;
     grid-template-rows: 1fr 1fr;
     row-gap: 25px;
+}
+
+@media only screen and (max-width: 758px) {
+    .content-week {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
 }

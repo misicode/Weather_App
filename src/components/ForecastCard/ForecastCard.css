@@ -41,3 +41,41 @@
     background-color: var(--hr-color);
     border-color: var(--hr-color);
 }
+
+@media only screen and (max-width: 758px) {
+    .forecast-card > h2 {
+        font-size: 14px;
+    }
+    
+    .temp-max,
+    .temp-min {
+        font-size: 12px;
+    }
+      
+    .clim-week {
+        font-size: 13px !important;
+    }
+      
+    .forecast-details {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .forecast-card > h2 {
+        font-size: 14px;
+    }
+
+    .temp-max,
+    .temp-min {
+        font-size: 12px;
+    }
+
+    .clim-week {
+        font-size: 12px !important;
+    }
+      
+    .forecast-details {
+        font-size: 10px;
+    }
+}

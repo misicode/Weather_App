@@ -20,9 +20,11 @@ export default function WeatherInfo(props) {
         <div className="content-info">
             <div className="info-details">
                 <h1>{ props.data.city }, { props.data.country }</h1>
-                <p>Last update: { formatTime() }</p>
-                <p>Humidity: <span>{ props.data.humidity } %</span></p>
-                <p>Wind: <span>{ props.data.wind } km/h</span></p>
+                <div className="details-clim">
+                    <p>Last update: { formatTime() }</p>
+                    <p>Humidity: <span>{ props.data.humidity } %</span></p>
+                    <p>Wind: <span>{ props.data.wind } km/h</span></p>
+                </div>
             </div>
             <div className="info-general">
                 <div className="flex-center">

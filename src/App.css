@@ -1,17 +1,6 @@
 .App {
   height: 100vh;
-}
-
-.bg-morning {
-  background-color: #63416c;
-}
-
-.bg-afternoon {
-  background-color: #402e4f;
-}
-
-.bg-evening {
-  background-color: #322a5d;
+  background: linear-gradient(#0e011f, #221637);
 }
 
 .container {
@@ -25,4 +14,10 @@
 .flex-center {
   display: flex;
   align-items: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .App {
+    height: auto;
+  }
 }

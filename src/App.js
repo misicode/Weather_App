@@ -9,18 +9,16 @@ function App() {
 
   function updateBackground() {
     if (hours >= 19 || hours <= 6) {
-      return {bgColor: "bg-evening", cardImage: "card-evening"};
-    } else if (hours <= 17) {
-      return {bgColor: "bg-morning", cardImage: "card-morning"};
+      return "card-night";
     } else {
-      return {bgColor: "bg-afternoon", cardImage: "card-afternoon"};
+      return "card-day";
     }
   }
 
   return (
-    <div className={`App ${ updateBackground().bgColor }`}>
+    <div className="App">
       <div className="container">
-        <Weather defaultCity="Lima" cardImage={ updateBackground().cardImage } />
+        <Weather defaultCity="Lima" cardImage={ updateBackground() } />
       </div>
     </div>
   );
