@@ -68,6 +68,7 @@
 
 @media only screen and (max-width: 580px) {
     .card {
+        width: 85%;
         grid-template-rows: 360px 1fr;
     }
 }
