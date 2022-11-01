@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "TL-Weather",
+  "name": "Weather App",
   "icons": [
     {
       "src": "favicon.ico",
@@ -25,6 +25,16 @@
     {
       "src": "wallpaper_evening.jpg",
       "type": "image/jpg",
+      "sizes": "1920x1080"
+    },
+    {
+      "src": "weather_daymode.gif",
+      "type": "image/gif",
+      "sizes": "1920x1080"
+    },
+    {
+      "src": "weather_nightmode.gif",
+      "type": "image/gif",
       "sizes": "1920x1080"
     }
   ],
