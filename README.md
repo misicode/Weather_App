@@ -11,9 +11,9 @@ Aplicación de pronóstico del clima que permite realizar la búsqueda de una de
 
 ## Muestra
 
-![TLWeather_DayMode](https://user-images.githubusercontent.com/88341114/199134349-eac53771-de77-4889-b9f0-7c74673c9ef8.gif)
+<img src="./public/weather_daymode.gif" />
 
-![TLWeather_NightMode](https://user-images.githubusercontent.com/88341114/199133833-5a586bbb-f2d9-484c-a65d-102fdba19431.gif)
+<img src="./public/weather_nightmode.gif" />
 
 ## Más información
 
