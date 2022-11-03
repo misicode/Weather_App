@@ -8,7 +8,7 @@ export default function SearchBar(props) {
             </button>
             <input
                 type="search"
-                placeholder="Enter a city..."
+                placeholder="Enter a city o zip code..."
                 onChange={ props.onChange }
             />
             <button type="button" onClick={ props.onClick }>
