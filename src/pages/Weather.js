@@ -7,7 +7,6 @@ import FormatDate from "../components/FormatDate/FormatDate";
 import Forecast from "../parts/Forecast/Forecast";
 import WeatherInfo from '../components/WeatherInfo/WeatherInfo';
 
-import '../assets/Variables.css';
 import './Weather.css';
 
 function Weather(props) {

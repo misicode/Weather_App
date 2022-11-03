@@ -1,6 +1,5 @@
 import WeatherIcon from "../WeatherIcon/WeatherIcon";
 
-import '../../assets/Variables.css';
 import './WeatherInfo.css';
 
 export default function WeatherInfo(props) {

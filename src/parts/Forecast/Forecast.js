@@ -4,7 +4,6 @@ import React, { useState, useEffect } from "react";
 import ForecastCard from '../../components/ForecastCard/ForecastCard';
 import Spinner from '../../components/Spinner/Spinner';
 
-import '../../assets/Variables.css';
 import './Forecast.css';
 
 export default function Forecast(props) {

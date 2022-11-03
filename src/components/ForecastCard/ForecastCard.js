@@ -1,6 +1,5 @@
 import WeatherIcon from "../WeatherIcon/WeatherIcon";
 
-import '../../assets/Variables.css';
 import './ForecastCard.css';
 
 export default function ForecastCard(props) {

@@ -1,4 +1,3 @@
-import '../../assets/Variables.css';
 import './SearchBar.css';
 
 export default function SearchBar(props) {

@@ -2,14 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 
 :root {
-    --primary-color: #ffffff;
-    --secondary-color: #ffffffba;
-    --auxiliar-color: rgba(255, 255, 255, 0.25);
-    --auxiliar-hover-color: rgba(255, 255, 255, 0.45);
+  --primary-color: #ffffff;
+  --secondary-color: #ffffffba;
+  --auxiliar-color: rgba(255, 255, 255, 0.25);
+  --auxiliar-hover-color: rgba(255, 255, 255, 0.45);
 
-    --bar-color: rgba(0, 0, 0, 0.15);
-    --hr-color: rgba(255, 255, 255, 0.08);
+  --bar-color: rgba(0, 0, 0, 0.15);
+  --hr-color: rgba(255, 255, 255, 0.08);
 
-    --text-font: "Poppins", sans-serif;
-    --degrees-font: "Josefin Sans", sans-serif;
-  }
+  --text-font: "Poppins", sans-serif;
+  --degrees-font: "Josefin Sans", sans-serif;
+}

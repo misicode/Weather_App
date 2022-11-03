@@ -1,4 +1,3 @@
-import '../../assets/Variables.css';
 import './FormatDate.css';
 
 export default function FormatDate(props) {

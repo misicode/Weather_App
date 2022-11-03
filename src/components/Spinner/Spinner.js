@@ -1,4 +1,3 @@
-import '../../assets/Variables.css';
 import './Spinner.css';
 
 export default function Spinner() {
