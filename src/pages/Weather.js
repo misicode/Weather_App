@@ -3,10 +3,10 @@ import React, { useState } from "react";
 import { toast } from "react-toastify";
 
 import Alert from "../components/Alert/Alert";
-import SearchBar from '../components/SearchBar/SearchBar';
-import Footer from '../parts/Footer/Footer';
+import Footer from '../layouts/Footer/Footer';
+import Forecast from "../layouts/Forecast/Forecast";
 import FormatDate from "../components/FormatDate/FormatDate";
-import Forecast from "../parts/Forecast/Forecast";
+import SearchBar from '../components/SearchBar/SearchBar';
 import WeatherInfo from '../components/WeatherInfo/WeatherInfo';
 
 import './Weather.css';
