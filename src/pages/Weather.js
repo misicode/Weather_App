@@ -1,6 +1,8 @@
 import axios from "axios";
 import React, { useState } from "react";
+import { toast } from "react-toastify";
 
+import Alert from "../components/Alert/Alert";
 import SearchBar from '../components/SearchBar/SearchBar';
 import Footer from '../parts/Footer/Footer';
 import FormatDate from "../components/FormatDate/FormatDate";
@@ -43,7 +45,11 @@ function Weather(props) {
 
     axios.get(apiUrl)
       .then(handleWeatherResponse)
-      .catch(err => console.error(err));
+      .catch(err => {
+        if (err.response.status === 404) {
+          toast.error("City or zip code not found");
+        }
+      });
   }
 
   function getCurrentPosition(event) {
@@ -58,12 +64,17 @@ function Weather(props) {
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${ latitude }&lon=${ longitude }&appid=${ process.env.REACT_APP_API_KEY }&units=metric`;
     axios.get(apiUrl)
       .then(handleWeatherResponse)
-      .catch(err => console.error(err));
+      .catch(err => {
+        if (err.response.status === 404) {
+          toast.error("Location not found");
+        }
+      });
   }
 
   if (weatherData.ready) {
     return (
       <>
+        <Alert />
         <div className={`card ${ props.cardImage }`}>
           <section className="weather-today">
             <div className="content">
