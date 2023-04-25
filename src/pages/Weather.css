@@ -10,12 +10,12 @@
 }
 
 .card-day {
-  background: url("/bg_day.jpg") no-repeat center 85%;
+  background: url("/bg_day.webp") no-repeat center 85%;
   background-size: cover;
 }
 
 .card-night {
-  background: url("/bg_night.jpg") no-repeat center 85%;
+  background: url("/bg_night.webp") no-repeat center 85%;
   background-size: cover;
 }
 
