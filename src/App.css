@@ -1,4 +1,4 @@
-.App {
+.app {
   height: 100vh;
   background: linear-gradient(#0e011f, #221637);
 }
@@ -17,7 +17,7 @@
 }
 
 @media only screen and (max-width: 1200px) {
-  .App {
+  .app {
     height: auto;
   }
 }

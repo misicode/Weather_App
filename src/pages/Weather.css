@@ -1,80 +1,81 @@
 .card {
-    display: grid;
-    width: 80%;
-    margin-top: 20px;
-    grid-template-columns: 1fr 1fr;
-    background-size: cover;
-    border-radius: 10px;
-    box-shadow: 4px 4px 4px;
+  display: grid;
+  min-height: 70%;
+  width: 80%;
+  margin-top: 20px;
+  grid-template-columns: 1fr 1fr;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px;
 }
 
 .card-day {
-    background: url('/public/bg_day.jpg') no-repeat center 85%;
-    background-size: cover;
+  background: url("/bg_day.jpg") no-repeat center 85%;
+  background-size: cover;
 }
 
 .card-night {
-    background: url('/public/bg_night.jpg') no-repeat center 85%;
-    background-size: cover;
+  background: url("/bg_night.jpg") no-repeat center 85%;
+  background-size: cover;
 }
 
 .content {
-    padding: 30px 50px;
-    color: var(--primary-color);
+  padding: 30px 50px;
+  color: var(--primary-color);
 }
 
 .full-height {
-    height: 100%;
+  height: 100%;
 }
 
 .weather-week {
-    background: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(7px);
-    border-radius: 0 10px 10px 0;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7px);
+  border-radius: 0 10px 10px 0;
 }
 
 @media only screen and (max-width: 1300px) {
-    .card {
-        width: 85%;
-    }
+  .card {
+    width: 85%;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
-    .card {
-        margin-top: 50px;
-        grid-template-columns: 1fr;
-        grid-template-rows: 370px 1fr;
-    }
+  .card {
+    margin-top: 50px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 370px 1fr;
+  }
 
-    .card-day {
-        background-position: 0 0;
-    }
-    
-    .card-night {
-        background-position: 0 0;
-    }
+  .card-day {
+    background-position: 0 0;
+  }
 
-    .weather-week {
-        border-radius: 0 0 10px 10px;
-    }
+  .card-night {
+    background-position: 0 0;
+  }
+
+  .weather-week {
+    border-radius: 0 0 10px 10px;
+  }
 }
 
 @media only screen and (max-width: 758px) {
-    .card {
-        width: 80%;
-        grid-template-rows: 370px 1fr;
-    }
+  .card {
+    width: 80%;
+    grid-template-rows: 370px 1fr;
+  }
 }
 
 @media only screen and (max-width: 580px) {
-    .card {
-        width: 85%;
-        grid-template-rows: 360px 1fr;
-    }
+  .card {
+    width: 85%;
+    grid-template-rows: 360px 1fr;
+  }
 }
 
 @media only screen and (max-width: 480px) {
-    .card {
-        grid-template-rows: 350px 1fr;
-    }
+  .card {
+    grid-template-rows: 350px 1fr;
+  }
 }

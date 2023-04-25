@@ -1,11 +1,12 @@
-# 📕 SheCodes Project: Weather App
+# 📕 Workshop: Weather App
 
-Aplicación de pronóstico del clima que permite realizar la búsqueda de una determinada ubicación para mostrar los detalles de temperatura, humedad y viento del tiempo actual en aquel lugar, así como también de los próximos 6 días.
+Aplicación de pronóstico del clima que permite realizar la búsqueda de una determinada ubicación, ya sea por su nombre, código postal o coordenadas de ubicación. Muestra los detalles de temperatura, humedad y viento del tiempo actual en aquel lugar, así como también de los próximos 6 días.
 
 ## Desarrollado con
 
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://es.reactjs.org)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/es/docs/Web/JavaScript)
+[![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev)
+[![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
 [![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/es/docs/Web/CSS)
 [![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/es/docs/Web/HTML)
 
@@ -23,4 +24,4 @@ Aplicación de pronóstico del clima que permite realizar la búsqueda de una de
   </a>
 </p>
 
-Este proyecto fue desarrollado como parte del workshop "SheCodes React", de SheCodes. Para obtener más información detallada de este programa visite el siguiente [enlace](https://www.shecodes.io/react).
+Este proyecto fue desarrollado como iniciativa del workshop "SheCodes React", de SheCodes. Para obtener más información detallada de este programa visite el siguiente [enlace](https://www.shecodes.io/react).
