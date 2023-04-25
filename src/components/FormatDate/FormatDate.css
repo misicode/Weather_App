@@ -18,10 +18,6 @@
 }
 
 @media only screen and (max-width: 580px) {
-  .weather-today > div > p {
-    font-size: 11px;
-  }
-
   .weather-today > div > h2 {
     font-size: 15px;
   }

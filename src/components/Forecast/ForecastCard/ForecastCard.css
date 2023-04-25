@@ -55,10 +55,6 @@
   .clim-week {
     font-size: 13px !important;
   }
-
-  .forecast-details {
-    font-size: 11px;
-  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -73,9 +69,5 @@
 
   .clim-week {
     font-size: 12px !important;
-  }
-
-  .forecast-details {
-    font-size: 10px;
   }
 }

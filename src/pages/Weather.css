@@ -3,7 +3,7 @@
   min-height: 70%;
   width: 80%;
   margin-top: 20px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.2fr;
   background-size: cover;
   border-radius: 10px;
   box-shadow: 4px 4px 4px;

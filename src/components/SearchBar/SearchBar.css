@@ -9,7 +9,7 @@
 
 input[type="search"] {
   width: 100%;
-  padding: 6px 10px;
+  padding: 14px 10px;
   letter-spacing: 1px;
   color: var(--primary-color);
   background: var(--bar-color);
@@ -39,8 +39,7 @@ input[type="search"]:focus::-webkit-search-cancel-button {
 }
 
 .content-options > button {
-  padding: 8px 5px;
-  width: 40px;
+  width: 52px;
   color: var(--primary-color);
   background-color: var(--auxiliar-color);
   border: none;

@@ -1,7 +1,9 @@
 .credits {
+  width: 80%;
   margin: 17px 0 0;
-  font-size: 11px;
+  font-size: 12px;
   color: var(--secondary-color);
+  text-align: center;
 }
 
 .credits > a {
@@ -13,23 +15,5 @@
 @media only screen and (max-width: 1200px) {
   .credits {
     margin-bottom: 40px;
-  }
-}
-
-@media only screen and (max-width: 758px) {
-  .credits {
-    font-size: 10px;
-  }
-}
-
-@media only screen and (max-width: 580px) {
-  .credits {
-    font-size: 9px;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .credits {
-    font-size: 8px;
   }
 }
