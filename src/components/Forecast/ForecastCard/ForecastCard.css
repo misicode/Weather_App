@@ -4,56 +4,69 @@
   border-radius: 10px;
   text-align: center;
 }
+
 .forecast-card > h2 {
   margin-bottom: 7px;
   font-size: 16px;
 }
+
 .forecast-info {
   display: grid;
   grid-template-rows: 2fr 1fr 2fr;
   align-items: center;
   justify-items: center;
 }
+
 .temp-max,
 .temp-min {
   font-size: 13px;
 }
+
 .temp-min {
   color: var(--secondary-color);
 }
+
 .clim-week {
   font-size: 14px !important;
 }
+
 .forecast-details {
   width: 100%;
   font-size: 12px;
   color: var(--secondary-color);
 }
+
 .forecast-details > hr {
   margin: 4px 0 8px;
   background-color: var(--hr-color);
   border-color: var(--hr-color);
 }
+
 @media only screen and (max-width: 758px) {
   .forecast-card > h2 {
     font-size: 14px;
   }
+
   .temp-max,
   .temp-min {
     font-size: 12px;
   }
+
   .clim-week {
     font-size: 13px !important;
   }
 }
+
 @media only screen and (max-width: 480px) {
   .forecast-card > h2 {
     font-size: 14px;
   }
+
   .temp-max,
   .temp-min {
     font-size: 12px;
   }
+
   .clim-week {
     font-size: 12px !important;
   }

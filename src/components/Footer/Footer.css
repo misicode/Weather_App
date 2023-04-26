@@ -5,11 +5,13 @@
   color: var(--secondary-color);
   text-align: center;
 }
+
 .credits > a {
   font-weight: 600;
   color: var(--primary-color);
   text-decoration: none;
 }
+
 @media only screen and (max-width: 1200px) {
   .credits {
     margin-bottom: 40px;

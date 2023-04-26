@@ -4,6 +4,7 @@
   width: 100%;
   margin-top: 40px;
 }
+
 .content-spinner > div {
   display: block;
   width: 50px;
@@ -14,6 +15,7 @@
   border-radius: 50%;
   animation: spinner 1s linear infinite;
 }
+
 @keyframes spinner {
   0% {
     transform: rotate(0deg);
@@ -22,16 +24,19 @@
     transform: rotate(360deg);
   }
 }
+
 @media only screen and (max-width: 758px) {
   .content-spinner {
     height: 538px;
   }
 }
+
 @media only screen and (max-width: 580px) {
   .content-spinner {
     height: 539px;
   }
 }
+
 @media only screen and (max-width: 480px) {
   .content-spinner {
     height: 514px;

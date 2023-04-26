@@ -1,6 +1,7 @@
 .full-vh {
   height: 100vh;
 }
+
 .loader,
 .loader:before,
 .loader:after {
@@ -31,6 +32,7 @@
 .loader:after {
   left: 3.5em;
 }
+
 @keyframes bblFadInOut {
   0%,
   80%,

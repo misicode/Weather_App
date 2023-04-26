@@ -1,4 +1,4 @@
-import { lazy, useState } from "react";
+import React, { useState } from "react";
 
 import {
   Footer,
@@ -13,7 +13,7 @@ import { Coordinates } from "../types";
 
 import "./Weather.css";
 
-const Alert = lazy(() => import("../components").then(({ Alert }) => ({ default: Alert })));
+const Alert = React.lazy(() => import("../components").then(({ Alert }) => ({ default: Alert })));
 
 type WeatherProps = {
   defaultCity: string;
