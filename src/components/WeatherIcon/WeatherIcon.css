@@ -2,42 +2,35 @@
   display: block;
   margin: auto 10px auto 0 !important;
 }
-
 .forecast-info > div > canvas {
   margin-right: 10px;
 }
-
 @media only screen and (max-width: 1200px) {
   .info-general canvas {
     height: 50px !important;
     width: 50px !important;
   }
-
   .forecast-info > div > canvas {
     height: 32px !important;
     width: 32px !important;
   }
 }
-
 @media only screen and (max-width: 758px) {
   .info-general canvas {
     height: 45px !important;
     width: 45px !important;
   }
-
   .forecast-info > div > canvas {
     height: 30px !important;
     width: 30px !important;
   }
 }
-
 @media only screen and (max-width: 580px) {
   .info-general canvas {
     height: 55px !important;
     width: 55px !important;
   }
 }
-
 @media only screen and (max-width: 480px) {
   .info-general canvas {
     height: 40px !important;

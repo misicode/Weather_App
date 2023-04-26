@@ -2,7 +2,6 @@
   height: 100vh;
   background: linear-gradient(#0e011f, #221637);
 }
-
 .container {
   display: flex;
   height: 100%;
@@ -10,12 +9,10 @@
   align-items: center;
   justify-content: center;
 }
-
 .flex-center {
   display: flex;
   align-items: center;
 }
-
 @media only screen and (max-width: 1200px) {
   .app {
     height: auto;

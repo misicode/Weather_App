@@ -6,18 +6,15 @@
   grid-template-rows: 1fr 1fr;
   row-gap: 25px;
 }
-
 @media only screen and (max-width: 758px) {
   .content-week {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
   }
 }
-
 @media only screen and (max-width: 480px) {
   .content-week {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 }
-
