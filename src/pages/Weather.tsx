@@ -1,7 +1,6 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 import {
-  Alert,
   Footer,
   Forecast,
   FormatDate,
@@ -13,6 +12,8 @@ import { useWeatherData } from "../hooks/useWeatherData";
 import { Coordinates } from "../types";
 
 import "./Weather.css";
+
+const Alert = React.lazy(() => import("../components").then(({ Alert }) => ({ default: Alert })));
 
 type WeatherProps = {
   defaultCity: string;
