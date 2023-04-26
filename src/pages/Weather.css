@@ -9,6 +9,16 @@
   box-shadow: 4px 4px 4px;
 }
 
+.card-day {
+  background: url("/bg_day.webp") no-repeat center 85%;
+  background-size: cover;
+}
+
+.card-night {
+  background: url("/bg_night.webp") no-repeat center 85%;
+  background-size: cover;
+}
+
 .content {
   padding: 30px 50px;
   color: var(--primary-color);
