@@ -6,8 +6,8 @@ const hours: number = new Date().getHours();
 
 const updateBackground = (): string => {
   return (hours >= 19 || hours <= 6)
-  ? "card-night"
-  : "card-day";
+  ? "/bg_night.webp"
+  : "/bg_day.webp";
 }
 
 const App = () => {

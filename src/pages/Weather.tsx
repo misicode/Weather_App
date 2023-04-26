@@ -8,7 +8,7 @@ import {
   SearchBar,
   WeatherInfo,
 } from "../components";
-import { useWeatherData } from "../hooks/useWeatherData";
+import { useProgressiveImage, useWeatherData } from "../hooks/useWeatherData";
 import { Coordinates } from "../types";
 
 import "./Weather.css";
@@ -27,12 +27,13 @@ const Weather = ({ defaultCity, cardBackground }: WeatherProps) => {
   const onChangeCity = ( newCity: string | number | Coordinates ) => {
     setCity(newCity);
   }
+  const loaded = useProgressiveImage(cardBackground);
 
   if (weatherData) {
     return (
       <>
         <Alert />
-        <div className={`card ${ cardBackground }`}>
+        <div className="card" style={{ background: `url(${loaded}) no-repeat center 85%`, backgroundSize: "cover" }}>
           <section className="weather-today">
             <div className="content">
               <FormatDate date={ weatherData.date } />
