@@ -29,9 +29,9 @@ const Forecast = ({ coords }: ForecastProps) => {
         })}
       </div>
     );
-  } else {
-    return <Spinner />;
   }
+  
+  return <Spinner />;
 }
 
 export default Forecast;

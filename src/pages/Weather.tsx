@@ -17,10 +17,11 @@ const Alert = lazy(() => import("../components").then(({ Alert }) => ({ default:
 
 type WeatherProps = {
   defaultCity: string;
+  date: Date;
   cardBackground: string;
 };
 
-const Weather = ({ defaultCity, cardBackground }: WeatherProps) => {
+const Weather = ({ defaultCity, date, cardBackground }: WeatherProps) => {
   const [city, setCity] = useState<string | number | Coordinates>(defaultCity);
   const weatherData = useWeatherData(city);
 
@@ -46,12 +47,12 @@ const Weather = ({ defaultCity, cardBackground }: WeatherProps) => {
             </div>
           </section>
         </div>
-        <Footer />
+        <Footer year={ date.getFullYear() } />
       </>
     );
-  } else {
-    return <Loader />
-  }
+  } 
+  
+  return <Loader />
 }
 
 export default Weather;

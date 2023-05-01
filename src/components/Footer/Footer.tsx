@@ -1,9 +1,13 @@
 import "./Footer.css";
 
-const Footer = () => {
+type FooterProps = {
+  year: number;
+};
+
+const Footer = ({ year }: FooterProps) => {
   return (
-    <p className="credits">
-      © 2022 Learning and Programming | Coded by{" "}
+    <p className="credits" role="description">
+      © { year } Learning and Programming | Coded by{" "}
       <a
         href="https://github.com/misicode/WS-Weather"
         target="_blank"
