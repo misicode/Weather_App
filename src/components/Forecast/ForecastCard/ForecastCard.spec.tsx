@@ -20,7 +20,27 @@ describe("Test <ForecastCard />", () => {
     expect(screen).toBeTruthy();
   });
 
-  test("Should render the format date elements", () => {
-    expect(screen.getByRole("heading")).toBeInTheDocument();
+  test("Should render the forecast card elements", () => {
+    const date = screen.getByRole("heading");
+
+    expect(date).toBeInTheDocument();
+    expect(date).toHaveTextContent("Sunday");
+
+    const data = screen.getAllByRole("note");
+    
+    expect(data[0]).toBeInTheDocument();
+    expect(data[0]).toHaveTextContent("23.28°");
+    
+    expect(data[1]).toBeInTheDocument();
+    expect(data[1]).toHaveTextContent("21.31°");
+
+    expect(data[2]).toBeInTheDocument();
+    expect(data[2]).toHaveTextContent("Clouds");
+    
+    expect(data[3]).toBeInTheDocument();
+    expect(data[3]).toHaveTextContent("Humidity: 80 %");
+    
+    expect(data[4]).toBeInTheDocument();
+    expect(data[4]).toHaveTextContent("Wind: 4.35 km/h");
   });
 });

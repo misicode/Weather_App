@@ -21,17 +21,17 @@ const ForecastCard = ({
         <div className="flex-center">
           <WeatherIcon code={ weather[0].icon } size={ 35 } />
           <div>
-            <p className="temp-max">{ temp.max }°</p>
-            <p className="temp-min">{ temp.min }°</p>
+            <p className="temp-max" role="note">{ temp.max }°</p>
+            <p className="temp-min" role="note">{ temp.min }°</p>
           </div>
         </div>
-        <p className="clim-week">{ weather[0].main }</p>
+        <p className="clim-week" role="note">{ weather[0].main }</p>
         <div className="forecast-details">
           <hr />
-          <p>
+          <p role="note">
             Humidity: <span className="humi-week">{ humidity } %</span>
           </p>
-          <p>
+          <p role="note">
             Wind: <span className="wind-week">{ wind_speed } km/h</span>
           </p>
         </div>
