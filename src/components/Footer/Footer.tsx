@@ -6,7 +6,7 @@ type FooterProps = {
 
 const Footer = ({ year }: FooterProps) => {
   return (
-    <p className="credits" role="description">
+    <p className="credits" role="note">
       © { year } Learning and Programming | Coded by{" "}
       <a
         href="https://github.com/misicode/WS-Weather"

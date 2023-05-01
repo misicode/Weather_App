@@ -14,7 +14,7 @@ describe("Test <Footer />", () => {
   });
 
   test("Should render the footer elements", () => {
-    const credits = screen.getByRole("description");
+    const credits = screen.getByRole("note");
 
     expect(credits).toBeInTheDocument();
     expect(credits).toHaveTextContent("© 2023 Learning and Programming | Coded by MISICODE");
