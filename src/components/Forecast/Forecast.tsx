@@ -19,7 +19,7 @@ const Forecast = ({ coords }: ForecastProps) => {
         {forecastData.map((day: Forecast, index: number) => {
           if (index > 0 && index < 7) {
             return (
-              <div className="forecast-card" key={ index }>
+              <div className="forecast-card" key={ index } role="group">
                 <ForecastCard data={ day } />
               </div>
             );

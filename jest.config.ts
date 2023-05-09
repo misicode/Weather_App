@@ -3,13 +3,15 @@ import type { Config } from "jest";
 const config: Config = {
   collectCoverageFrom: [
     "src/**/*.{js,jsx,ts,tsx}",
-    "!src/**/*.d.ts",
-    "!src/mocks/**",
+    "!**/**.d.ts",
+    "!src/**/*.mock.spec.(t|j)s",
   ],
-  testEnvironment: "jest-environment-jsdom",
+  testEnvironment: "jsdom",
+  testRegex: [
+    "^(?!.*\.(mock.spec)\.ts$).*\.spec.(ts|tsx)$"
+  ],
   setupFilesAfterEnv: [
-    "@testing-library/jest-dom/extend-expect",
-    "jest-canvas-mock"
+    "<rootDir>/jest.setup.ts"
   ],
   transform: {
     "^.+\\.(ts|js|tsx|jsx)$": "@swc/jest",
