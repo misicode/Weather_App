@@ -44,6 +44,12 @@ Según su necesidad puede ejecutar cualquiera de los siguientes comandos:
   ```
   npm run test:cov
   ```
+ 
+- Para evaluar el código fuente:
+
+  ```
+  npm run sonar
+  ```
 
 ## 🛠️ Desarrollado con
 
