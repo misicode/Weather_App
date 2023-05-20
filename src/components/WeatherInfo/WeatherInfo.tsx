@@ -8,21 +8,21 @@ type WeatherInfoProps = {
   data: Weather;
 };
 
+export const formatTime = (date: Date) => {
+  let hours = date.getHours().toString();
+  let minutes = date.getMinutes().toString();
+
+  if (Number(hours) < 10) hours = `0${hours}`;
+  if (Number(minutes) < 10) minutes = `0${minutes}`;
+
+  return Number(hours) < 12
+    ? `${hours}:${minutes} AM`
+    : `${hours}:${minutes} PM`;
+}
+
 const WeatherInfo = ({
   data: { date, city, country, icon, temperature, climate, humidity, wind },
 }: WeatherInfoProps) => {
-  const formatTime = () => {
-    let hours = date!.getHours().toString();
-    let minutes = date!.getMinutes().toString();
-
-    if (Number(hours) < 10) hours = `0${hours}`;
-    if (Number(minutes) < 10) minutes = `0${minutes}`;
-
-    return Number(hours) < 12
-      ? `${hours}:${minutes} AM`
-      : `${hours}:${minutes} PM`;
-  }
-
   return (
     <div className="content-info">
       <div className="info-details">
@@ -30,11 +30,11 @@ const WeatherInfo = ({
           { city }, { country }
         </h1>
         <div className="details-clim">
-          <p>Last update: { formatTime() }</p>
-          <p>
+          <p role="note">Last update: { formatTime(date) }</p>
+          <p role="note">
             Humidity: <span>{ humidity } %</span>
           </p>
-          <p>
+          <p role="note">
             Wind: <span>{ wind } km/h</span>
           </p>
         </div>
@@ -43,12 +43,12 @@ const WeatherInfo = ({
         <div className="flex-center">
           <WeatherIcon code={ icon } size={ 55 } />
           <div className="info-temp">
-            <p>{ Math.round(temperature) }</p>
+            <p role="note">{ Math.round(temperature) }</p>
             <span>°</span>
             <span>C</span>
           </div>
         </div>
-        <p>{ climate }</p>
+        <p role="note">{ climate }</p>
       </div>
     </div>
   );

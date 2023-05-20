@@ -36,3 +36,13 @@ interface Temperature {
 export interface StringMap {
   [key: string]: string;
 }
+
+export interface WeatherDataResponse {
+  name: string;
+  sys: { country: string };
+  dt: number;
+  main: { temp: number, humidity: number };
+  wind: { speed: number };
+  weather: [{ main: string, icon: string }];
+  coord: Coordinates;
+}

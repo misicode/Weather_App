@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 
 import { searchWeatherByCity, searchWeatherByCoords } from "../helpers/getWeather";
-import { Weather, Coordinates } from "../types";
+import { Weather, Coordinates, WeatherDataResponse } from "../types";
 
 export const useWeatherData = (arg: string | number | Coordinates) => {
   const [weatherData, setWeatherData] = useState<Weather>();
 
-  const getWeather = async () => {
-    let data;
+  const getWeatherData = async () => {
+    let data: WeatherDataResponse;
     
     (typeof arg === "string" || typeof arg === "number") 
     // Si el parámetro es de tipo cadena o númerico, busca el clima por el nombre de la ciudad o el código postal
@@ -32,7 +32,7 @@ export const useWeatherData = (arg: string | number | Coordinates) => {
   };
 
   useEffect(() => {
-    getWeather();
+    getWeatherData();
   }, [arg]);
 
   return weatherData;

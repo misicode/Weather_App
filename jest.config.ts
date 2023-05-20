@@ -5,6 +5,8 @@ const config: Config = {
     "src/**/*.{js,jsx,ts,tsx}",
     "!**/**.d.ts",
     "!src/**/*.mock.spec.(t|j)s",
+    "!**/*index.ts",
+    "!src/helpers/**.*",
   ],
   testEnvironment: "jsdom",
   testRegex: [
