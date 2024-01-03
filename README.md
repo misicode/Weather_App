@@ -1,4 +1,4 @@
-<h1 align="center">Workshop: Weather App</h1>
+<h1 align="center">🌤️ Weather App</h1>
 
 ## 📚 Acerca del Proyecto
 
@@ -51,7 +51,7 @@ Según su necesidad puede ejecutar cualquiera de los siguientes comandos:
   npm run sonar
   ```
 
-## 🛠️ Desarrollado con
+## 🛠️ Herramientas utilizadas
 
 | Tecnología     | Uso                                                                                                                  |
 | -------------- | -------------------------------------------------------------------------------------------------------------------- |
@@ -62,6 +62,6 @@ Según su necesidad puede ejecutar cualquiera de los siguientes comandos:
 | [![Jest](https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white)](https://jestjs.io/docs/getting-started)              | Framework de testing para las pruebas unitarias |
 | [![SonarQube](https://img.shields.io/badge/SonarQube-black?style=for-the-badge&logo=sonarqube&logoColor=4E9BCD)](https://docs.sonarqube.org/latest/)       | Plataforma para evaluar el código fuente |
 
-## 📝 Créditos
+## 📝 Agradecimientos
 
 La idea de este proyecto surgió como iniciativa del workshop "SheCodes React", de [SheCodes](https://www.shecodes.io). Para obtener más información detallada de este programa visite el siguiente [enlace](https://www.shecodes.io/react).
