@@ -2,7 +2,7 @@
 
 ## 📚 Acerca del Proyecto
 
-Aplicación de pronóstico del clima que permite realizar la búsqueda de una determinada ubicación, ya sea por su nombre, código postal o coordenadas de ubicación. Muestra los detalles de temperatura, humedad y viento del día actual, así como también de los próximos 6 días.
+Aplicación de pronóstico del clima desarrollada con Vite y React, permite realizar la búsqueda de una determinada ubicación por su nombre, código postal o coordenadas de ubicación y muestra los detalles del clima actual y los próximos 6 días.
 
 ## 📸 Capturas
 
