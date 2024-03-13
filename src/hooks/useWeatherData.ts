@@ -9,11 +9,13 @@ export const useWeatherData = (arg: string | number | Coordinates) => {
   const getWeatherData = async () => {
     let data: WeatherDataResponse;
     
-    (typeof arg === "string" || typeof arg === "number") 
-    // Si el parámetro es de tipo cadena o númerico, busca el clima por el nombre de la ciudad o el código postal
-    ? data = await searchWeatherByCity(arg)
-    // Si es de otro tipo, infiere que la búsqueda será por las coordenadas
-    : data = await searchWeatherByCoords(arg);
+    if (typeof arg === "string" || typeof arg === "number") {
+      // Si el parámetro es de tipo cadena o númerico, busca el clima por el nombre de la ciudad o el código postal
+      data = await searchWeatherByCity(arg);
+    } else {
+      // Si es de otro tipo, infiere que la búsqueda será por las coordenadas
+      data = await searchWeatherByCoords(arg);
+    }
 
     if (!data) return;
 

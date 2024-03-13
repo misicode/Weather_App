@@ -9,7 +9,7 @@ const Footer = ({ year }: FooterProps) => {
     <p className="credits" role="note">
       © { year } Learning and Programming | Coded by{" "}
       <a
-        href="https://github.com/misicode/WS-Weather"
+        href="https://github.com/misicode/WeatherApp"
         target="_blank"
         rel="noreferrer"
       >

@@ -2,7 +2,7 @@ import ForecastCard from "./ForecastCard/ForecastCard";
 import Spinner from "../Spinner/Spinner";
 
 import { useForecastData } from "../../hooks/useForecastData";
-import { Coordinates, Forecast } from "../../types";
+import { Coordinates, ForecastDay } from "../../types";
 
 import "./Forecast.css";
 
@@ -16,10 +16,10 @@ const Forecast = ({ coords }: ForecastProps) => {
   if (forecastData) {
     return (
       <div className="content-week">
-        {forecastData.map((day: Forecast, index: number) => {
+        {forecastData.map((day: ForecastDay, index: number) => {
           if (index > 0 && index < 7) {
             return (
-              <div className="forecast-card" key={ index } role="group">
+              <div className="forecast-card" key={ day.dt } role="group">
                 <ForecastCard data={ day } />
               </div>
             );

@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 
 import { searchForecast } from "../helpers/getWeather";
-import { Coordinates, Forecast } from "../types";
+import { Coordinates, ForecastDay } from "../types";
 
 export const useForecastData = (coords: Coordinates) => {
-  const [forecastData, setForecastData] = useState<Forecast[]>();
+  const [forecastData, setForecastData] = useState<ForecastDay[]>();
 
   const getForecast = async () => {
     const { daily } = await searchForecast(coords);

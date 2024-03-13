@@ -1,12 +1,12 @@
 import WeatherIcon from "../../WeatherIcon/WeatherIcon";
 
 import { DAYS } from "../../../assets/Constants";
-import { Forecast } from "../../../types";
+import { ForecastDay } from "../../../types";
 
 import "./ForecastCard.css";
 
 type ForecastProps = {
-  data: Forecast;
+  data: ForecastDay;
 };
 
 const ForecastCard = ({

@@ -1,10 +1,10 @@
 import { render, screen } from "@testing-library/react";
 
 import ForecastCard from "./ForecastCard";
-import { Forecast } from "../../../types";
+import { ForecastDay } from "../../../types";
 
 describe("Test <ForecastCard />", () => {
-  const data: Forecast = {
+  const data: ForecastDay = {
     dt: 1682874000,
     weather: [{ main: "Clouds", icon: "04d" }],
     temp: { min: 21.31, max: 23.28},

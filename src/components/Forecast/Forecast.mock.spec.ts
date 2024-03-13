@@ -1,6 +1,6 @@
-import { Forecast } from "../../types";
+import { ForecastDay } from "../../types";
 
-export const forecastData: Forecast[] = [
+export const forecastData: ForecastDay[] = [
   {
     dt: 1683478800,
     temp: { min: 20.66, max: 23.28 },

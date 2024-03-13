@@ -17,11 +17,11 @@ describe("Test <Footer />", () => {
     const credits = screen.getByRole("note");
 
     expect(credits).toBeInTheDocument();
-    expect(credits).toHaveTextContent("© 2023 Learning and Programming | Coded by MISICODE");
+    expect(credits).toHaveTextContent(`© ${ year } Learning and Programming | Coded by MISICODE`);
 
     expect(screen.getByRole("link")).toHaveAttribute(
       "href", 
-      "https://github.com/misicode/WS-Weather"
+      "https://github.com/misicode/WeatherApp"
     );
   });
 });

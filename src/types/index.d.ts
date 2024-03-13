@@ -10,7 +10,7 @@ export interface Weather {
   coordinates: Coordinates;
 }
 
-export interface Forecast {
+export interface ForecastDay {
   dt: number;
   weather: Climate[];
   temp: Temperature;
