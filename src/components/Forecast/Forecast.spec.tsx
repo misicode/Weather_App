@@ -31,7 +31,9 @@ describe("Test <Forecast />", () => {
 
     render(<Forecast coords={coords} />);
 
-    const forecastGroups = screen.getAllByRole("group");
+    const forecastGroups = Array.from(Array(6).keys()).map(index =>
+      screen.getByTestId(`forecast-group-${ index + 1 }`)
+    );
     expect(forecastGroups).toHaveLength(6);
   });
 

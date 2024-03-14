@@ -16,7 +16,7 @@ describe("Test <SearchBar />", () => {
   });
 
   test("Should submit the form with a valid city name", () => {
-    const form = screen.getByRole("form");
+    const form = screen.getByTestId("search-form");
     const input: HTMLInputElement = screen.getByRole("searchbox");
 
     // Asigna el valor del input
@@ -66,7 +66,7 @@ describe("Test <SearchBar />", () => {
   });
 
   test("Should not submit the form with an invalid value", () => {
-    const form = screen.getByRole("form");
+    const form = screen.getByTestId("search-form");
     const input: HTMLInputElement = screen.getByRole("searchbox");
 
     // Asigna el valor del input
