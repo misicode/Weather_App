@@ -49,7 +49,7 @@ describe("Test <Weather />", () => {
       render(<Weather defaultCity="Huancavelica" date={ date } cardBackground={ cardBackground } />);
     });
 
-    const form = screen.getByRole("form");
+    const form = screen.getByTestId("search-form");
     const input: HTMLInputElement = screen.getByRole("searchbox");
 
     // Asigna el valor del input

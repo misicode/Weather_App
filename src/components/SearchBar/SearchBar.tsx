@@ -27,6 +27,7 @@ const SearchBar = ({ onNewCity }: SearchBarProps) => {
   function getCurrentPosition(event: React.MouseEvent<HTMLButtonElement>) {
     event.preventDefault();
     
+    // El uso de geolocalización es necesario para obtener la ubicación del usuario y mostrar el clima actual en esa ubicación
     navigator.geolocation.getCurrentPosition(({ coords }) => {
       onNewCity({ lat: coords.latitude, lon: coords.longitude });
     });

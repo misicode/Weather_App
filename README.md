@@ -17,34 +17,6 @@
 </div>
 
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary><strong>Contenido</strong></summary>
-  <ul>
-    <li>
-      <a href="#-acerca-del-repositorio">Acerca del repositorio</a>
-      <ul>
-        <li><a href="#-construido-con">Construido con</a></li>
-        <li><a href="#-capturas-de-pantalla">Capturas de pantalla</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ul>
-</details>
-
-
 <!-- ABOUT THE PROJECT -->
 ## 📖 Acerca del repositorio
 
@@ -121,15 +93,15 @@ Visual Studio Code
 
 ### Pruebas unitarias
 
-Para ejecutar los tests unitarios y el reporte de cobertura ejecute el siguiente comando:
+Ejecute el siguiente comando para iniciar los tests unitarios y generar el reporte de cobertura.
 
 ```
 npm run test:cov
 ```
 
-Resultado:
+Visualize los resultados del reporte de cobertura en la ruta `./coverage/lcov-report/index.html`
 
-<img src="https://github.com/misicode/WeatherApp/assets/88341114/aae964c2-9df8-48da-a96a-8a3c477737ce" width=600 />
+<img src="https://github.com/misicode/WeatherApp/assets/88341114/bf6801d3-7087-49ef-a485-ac7feafb9e71" width=800 />
 
 
 <!-- CODE QUALITY -->
@@ -159,6 +131,10 @@ SonarQube >= 10.3
    ```
    npm run sonar
    ```
+
+### Resultados
+
+<img src="https://github.com/misicode/WeatherApp/assets/88341114/65ea7e28-007c-4f9c-9d53-c59011b31235" width=800 />
 
 
 <!-- CONTACT -->
