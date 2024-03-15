@@ -141,7 +141,7 @@ SonarQube >= 10.3
 <!-- LICENSE -->
 ## 💼 Licencia
 
-Distribuido bajo la licencia MIT. Consulte [LICENCIA.txt][license-url] para obtener más información.
+Distribuido bajo la licencia MIT. Consulte [LICENSE.txt][license-url] para obtener más información.
 
 
 <!-- CONTACT -->
