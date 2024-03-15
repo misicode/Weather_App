@@ -14,7 +14,7 @@
     |
     <a href="https://github.com/misicode/WeatherApp/issues">Solicitar Feature</a>
   </p>
-</div>
+</div><br>
 
 
 <!-- ABOUT THE PROJECT -->
@@ -31,6 +31,7 @@ Aplicación web desarrollada con React que consume la API de [OpenWeather][openw
 | [![TypeScript][typescript-badge]][typescript-url] | Lenguaje de programación fuertemente tipado para escribir código  | 5.2.2   |
 | [![Jest][jest-badge]][jest-url]                   | Framework de testing para las pruebas unitarias                   | 29.5.0  |
 | [![SonarQube][sonarqube-badge]][sonarqube-url]    | Plataforma para evaluar el código fuente                          | 10.3    |
+| [![NPM][npm-badge]][npm-url]                      | Administrador de paquetes para instalar las dependencias          | 9.5.0   |
 | [![Visual Studio Code][vsc-badge]][vsc-url]       | Editor de código para el proyecto                                 | 1.87.2  |
 
 
@@ -99,7 +100,7 @@ Ejecute el siguiente comando para iniciar los tests unitarios y generar el repor
 npm run test:cov
 ```
 
-Visualize los resultados del reporte de cobertura en la ruta `./coverage/lcov-report/index.html`
+Visualize los resultados del reporte de cobertura en la ruta `./coverage/lcov-report/index.html`.
 
 <img src="https://github.com/misicode/WeatherApp/assets/88341114/bf6801d3-7087-49ef-a485-ac7feafb9e71" width=800 />
 
@@ -137,6 +138,12 @@ SonarQube >= 10.3
 <img src="https://github.com/misicode/WeatherApp/assets/88341114/65ea7e28-007c-4f9c-9d53-c59011b31235" width=800 />
 
 
+<!-- LICENSE -->
+## 💼 Licencia
+
+Distribuido bajo la licencia MIT. Consulte [LICENCIA.txt][license-url] para obtener más información.
+
+
 <!-- CONTACT -->
 ## 👩‍💻 Contacto
 
@@ -168,6 +175,7 @@ La idea de este proyecto surgió como iniciativa del workshop "SheCodes React", 
 [npm-url]: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
 [vsc-badge]: https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white
 [vsc-url]: https://code.visualstudio.com
+[license-url]: ./LICENSE.txt
 [github-badge]: https://img.shields.io/badge/github-%23121011.svg?logo=github&logoColor=white&colorB=555
 [github-url]: https://github.com/misicode
 [linkedin-badge]: https://img.shields.io/badge/-LinkedIn-black.svg?logo=linkedin&colorB=555
