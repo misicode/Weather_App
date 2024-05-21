@@ -29,8 +29,10 @@ const WeatherInfo = ({
         <h1>
           { city }, { country }
         </h1>
-        <div className="details-clim">
-          <p role="note">Last update: { formatTime(date) }</p>
+        <div>
+          <p role="note">
+            Last update: { formatTime(date) }
+          </p>
           <p role="note">
             Humidity: <span>{ humidity } %</span>
           </p>
@@ -43,7 +45,9 @@ const WeatherInfo = ({
         <div className="flex-center">
           <WeatherIcon code={ icon } size={ 55 } />
           <div className="info-temp">
-            <p role="note">{ Math.round(temperature) }</p>
+            <p role="note">
+              { Math.round(temperature) }
+            </p>
             <span>°</span>
             <span>C</span>
           </div>

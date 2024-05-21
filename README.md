@@ -30,7 +30,7 @@ Aplicación web desarrollada con React que consume la API de [OpenWeather][openw
 | [![Vite][vite-badge]][vite-url]                   | Herramienta de Frontend para construir el proyecto                | 5.1.6   |
 | [![TypeScript][typescript-badge]][typescript-url] | Lenguaje de programación fuertemente tipado para escribir código  | 5.2.2   |
 | [![Jest][jest-badge]][jest-url]                   | Framework de testing para las pruebas unitarias                   | 29.5.0  |
-| [![SonarQube][sonarqube-badge]][sonarqube-url]    | Plataforma para evaluar el código fuente                          | 10.3    |
+| [![SonarQube][sonarqube-badge]][sonarqube-url]    | Plataforma para evaluar el código fuente                          | 10.5    |
 | [![NPM][npm-badge]][npm-url]                      | Administrador de paquetes para instalar las dependencias          | 9.5.0   |
 | [![Visual Studio Code][vsc-badge]][vsc-url]       | Editor de código para el proyecto                                 | 1.87.2  |
 
@@ -111,7 +111,7 @@ Visualize los resultados del reporte de cobertura en la ruta `./coverage/lcov-re
 ### Requisitos previos
 
 ```txt
-SonarQube >= 10.3
+SonarQube >= 9.X
 ```
 
 ### Configuración
@@ -135,7 +135,7 @@ SonarQube >= 10.3
 
 ### Resultados
 
-<img src="https://github.com/misicode/WeatherApp/assets/88341114/65ea7e28-007c-4f9c-9d53-c59011b31235" width=800 />
+<img src="https://github.com/misicode/WeatherApp/assets/88341114/b6e1d961-0665-4d10-836a-a065a1650726" width=800 />
 
 
 <!-- LICENSE -->
@@ -145,10 +145,11 @@ Distribuido bajo la licencia MIT. Consulte [LICENSE.txt][license-url] para obten
 
 
 <!-- CONTACT -->
-## 👩‍💻 Contacto
+## 🌸 Contacto
 
 Desarrollado por **Alessandra Mincia**
 
+[![Misicode][misicode-badge]][misicode-url]
 [![GitHub][github-badge]][github-url]
 [![LinkedIn][linkedin-badge]][linkedin-url]
 
@@ -176,7 +177,9 @@ La idea de este proyecto surgió como iniciativa del workshop "SheCodes React", 
 [vsc-badge]: https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white
 [vsc-url]: https://code.visualstudio.com
 [license-url]: ./LICENSE.txt
-[github-badge]: https://img.shields.io/badge/github-%23121011.svg?logo=github&logoColor=white&colorB=555
+[misicode-badge]: https://img.shields.io/badge/misicode-C020FF?logo=githubsponsors&logoColor=fff
+[misicode-url]: https://misicode.netlify.app/
+[github-badge]: https://img.shields.io/badge/github-272727?logo=github&logoColor=fff
 [github-url]: https://github.com/misicode
-[linkedin-badge]: https://img.shields.io/badge/-LinkedIn-black.svg?logo=linkedin&colorB=555
+[linkedin-badge]: https://img.shields.io/badge/linkedin-0A66C2?logo=linkedin&logoColor=fff
 [linkedin-url]: https://www.linkedin.com/in/misicode

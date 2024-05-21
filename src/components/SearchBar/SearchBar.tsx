@@ -41,6 +41,7 @@ const SearchBar = ({ onNewCity }: SearchBarProps) => {
         </svg>
       </button>
       <input
+        id="search-bar"
         type="search"
         placeholder="Enter a city o zip code..."
         value={ value }

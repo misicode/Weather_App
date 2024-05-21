@@ -1,13 +1,13 @@
 .credits {
-  width: 80%;
-  margin: 17px 0 0;
-  font-size: 12px;
   color: var(--secondary-color);
+  font-size: 12px;
+  margin: 17px 0 0;
   text-align: center;
+  width: 80%;
 }
 .credits > a {
-  font-weight: 600;
   color: var(--primary-color);
+  font-weight: 600;
   text-decoration: none;
 }
 @media only screen and (max-width: 1200px) {

@@ -1,9 +1,9 @@
 .content-week {
-  display: grid;
-  margin-top: 40px;
-  grid-template-columns: 1fr 1fr 1fr;
   column-gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  margin-top: 40px;
   row-gap: 25px;
 }
 @media only screen and (max-width: 758px) {

@@ -1,18 +1,18 @@
 .content-spinner {
   display: flex;
   height: 381px;
-  width: 100%;
   margin-top: 40px;
+  width: 100%;
 }
 .content-spinner > div {
+  animation: spinner 1s linear infinite;
+  border-radius: 50%;
+  border-top: 6px solid var(--secondary-color);
+  border: 6px solid var(--auxiliar-hover-color);
   display: block;
-  width: 50px;
   height: 50px;
   margin: auto;
-  border: 6px solid var(--auxiliar-hover-color);
-  border-top: 6px solid var(--secondary-color);
-  border-radius: 50%;
-  animation: spinner 1s linear infinite;
+  width: 50px;
 }
 @keyframes spinner {
   0% {

@@ -1,5 +1,5 @@
 import { renderHook, RenderHookResult } from "@testing-library/react";
-import { act } from "react-dom/test-utils";
+import { act } from "react";
 
 import * as GetWeather from "../helpers/getWeather";
 import { forecastData } from "../components/Forecast/Forecast.mock.spec";

@@ -35,13 +35,13 @@ const Weather = ({ defaultCity, date, cardBackground }: WeatherProps) => {
         <Alert />
         <div className={`card ${ cardBackground }`}>
           <section className="weather-today">
-            <div className="content">
+            <div className="content h-full">
               <FormatDate date={ weatherData.date } />
               <WeatherInfo data={ weatherData } />
             </div>
           </section>
           <section className="weather-week">
-            <div className="content full-height">
+            <div className="content h-full">
               <SearchBar onNewCity={ onChangeCity } />
               <Forecast coords={ weatherData.coordinates } />
             </div>

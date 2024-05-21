@@ -1,22 +1,22 @@
-.full-vh {
-  height: 100vh;
-}
 .loader,
 .loader:before,
 .loader:after {
+  animation-name: fadeInOut;
   border-radius: 50%;
-  width: 2.5em;
   height: 2.5em;
-  animation: bblFadInOut 1.8s infinite ease-in-out;
+  width: 2.5em;
+  animation-duration: 1.8s;
   animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 .loader {
-  color: #fff;
+  animation-delay: -0.16s;
+  color: white;
   font-size: 7px;
   position: relative;
   text-indent: -9999em;
   transform: translateZ(0);
-  animation-delay: -0.16s;
 }
 .loader:before,
 .loader:after {
@@ -25,13 +25,13 @@
   top: 0;
 }
 .loader:before {
-  left: -3.5em;
   animation-delay: -0.32s;
+  left: -3.5em;
 }
 .loader:after {
   left: 3.5em;
 }
-@keyframes bblFadInOut {
+@keyframes fadeInOut {
   0%,
   80%,
   100% {

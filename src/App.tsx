@@ -14,10 +14,8 @@ export const updateBackground = (date: Date): string => {
 
 const App = () => {
   return (
-    <div className="app">
-      <div className="container">
-        <Weather defaultCity="Lima" date={ date } cardBackground={ updateBackground(date) } />
-      </div>
+    <div className="app container">
+      <Weather defaultCity="Lima" date={ date } cardBackground={ updateBackground(date) } />
     </div>
   );
 }

@@ -1,5 +1,6 @@
+import "@testing-library/jest-dom";
 import { fireEvent, render, screen } from "@testing-library/react";
-import { act } from "react-dom/test-utils";
+import { act } from "react";
 
 import * as UseForecastData from "../hooks/useForecastData";
 import * as UseWeatherData from "../hooks/useWeatherData";
