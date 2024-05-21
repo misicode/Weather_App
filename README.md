@@ -147,7 +147,7 @@ Distribuido bajo la licencia MIT. Consulte [LICENSE.txt][license-url] para obten
 <!-- CONTACT -->
 ## 🌸 Contacto
 
-Desarrollado por **Alessandra Mincia**
+_Desarrollado por_ **Alessandra Mincia**
 
 [![Misicode][misicode-badge]][misicode-url]
 [![GitHub][github-badge]][github-url]
@@ -179,7 +179,7 @@ La idea de este proyecto surgió como iniciativa del workshop "SheCodes React", 
 [license-url]: ./LICENSE.txt
 [misicode-badge]: https://img.shields.io/badge/misicode-C020FF?logo=githubsponsors&logoColor=fff
 [misicode-url]: https://misicode.netlify.app/
-[github-badge]: https://img.shields.io/badge/github-272727?logo=github&logoColor=fff
+[github-badge]: https://img.shields.io/badge/Github-272727?logo=github&logoColor=fff
 [github-url]: https://github.com/misicode
-[linkedin-badge]: https://img.shields.io/badge/linkedin-0A66C2?logo=linkedin&logoColor=fff
+[linkedin-badge]: https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=fff
 [linkedin-url]: https://www.linkedin.com/in/misicode
