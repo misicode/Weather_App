@@ -14,7 +14,7 @@ const pwaConfig: Partial<VitePWAOptions> = {
   ],
   manifest: {
     name: "Weather App",
-    short_name: "weather-app",
+    short_name: "Weather",
     description: "Weather forecast app",
     icons: [
       {
@@ -24,13 +24,13 @@ const pwaConfig: Partial<VitePWAOptions> = {
         purpose: "favicon",
       },
       {
-        src: "/favicon-16x16.icon",
+        src: "/favicon-16x16.png",
         sizes: "16x16",
         type: "image/png",
         purpose: "favicon",
       },
       {
-        src: "/favicon-32x32.icon",
+        src: "/favicon-32x32.png",
         sizes: "32x32",
         type: "image/png",
         purpose: "favicon",
@@ -55,7 +55,7 @@ const pwaConfig: Partial<VitePWAOptions> = {
       }
     ],
     theme_color: "#ffffff",
-    background_color: "#ffffff",
+    background_color: "#fff",
     display: "standalone",
     scope: "/",
     start_url: "/",
