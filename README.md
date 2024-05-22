@@ -20,19 +20,19 @@
 <!-- ABOUT THE PROJECT -->
 ## 📖 Acerca del repositorio
 
-Aplicación web desarrollada con React que consume la API de [OpenWeather][openweather-url] para obtener el pronóstico del clima de una determinada ubicación según su nombre, código postal o coordenadas de ubicación.
+Aplicación web progresiva (PWA) desarrollada con React que consume la API de [OpenWeather][openweather-url] para obtener el pronóstico del clima de una determinada ubicación según su nombre, código postal o coordenadas de ubicación.
 
 ### Construido con
 
 | Herramienta                                       | Descripción                                                       | Versión |
 | ------------------------------------------------- | ----------------------------------------------------------------- | ------- |
 | [![React][react-badge]][react-url]                | Biblioteca de JavaScript para construir las interfaces de usuario | 18.2.0  |
-| [![Vite][vite-badge]][vite-url]                   | Herramienta de Frontend para construir el proyecto                | 5.1.6   |
+| [![Vite][vite-badge]][vite-url]                   | Herramienta de Frontend para construir el proyecto                | 5.2.0   |
 | [![TypeScript][typescript-badge]][typescript-url] | Lenguaje de programación fuertemente tipado para escribir código  | 5.2.2   |
-| [![Jest][jest-badge]][jest-url]                   | Framework de testing para las pruebas unitarias                   | 29.5.0  |
+| [![Jest][jest-badge]][jest-url]                   | Framework de testing para las pruebas unitarias                   | 29.7.0  |
 | [![SonarQube][sonarqube-badge]][sonarqube-url]    | Plataforma para evaluar el código fuente                          | 10.5    |
-| [![NPM][npm-badge]][npm-url]                      | Administrador de paquetes para instalar las dependencias          | 9.5.0   |
-| [![Visual Studio Code][vsc-badge]][vsc-url]       | Editor de código para el proyecto                                 | 1.87.2  |
+| [![NPM][npm-badge]][npm-url]                      | Administrador de paquetes para instalar las dependencias          | 10.5.0   |
+| [![Visual Studio Code][vsc-badge]][vsc-url]       | Editor de código para el proyecto                                 | 1.89.1  |
 
 
 ### Vista previa
