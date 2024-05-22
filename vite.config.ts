@@ -9,8 +9,7 @@ const pwaConfig: Partial<VitePWAOptions> = {
     "favicon-16x16.png",
     "favicon-32x32.png",
     "apple-touc-icon.png",
-    "android-chrome-192x192.png",
-    "android-chrome-512x512.png"
+    "android-chrome-192x192.png"
   ],
   manifest: {
     name: "Weather App",
@@ -18,7 +17,7 @@ const pwaConfig: Partial<VitePWAOptions> = {
     description: "Weather forecast app",
     icons: [
       {
-        src: "/favicon.icon",
+        src: "/favicon.ico",
         sizes: "48x48",
         type: "image/x-icon",
         purpose: "favicon",
@@ -47,12 +46,6 @@ const pwaConfig: Partial<VitePWAOptions> = {
         type: "image/png",
         purpose: "any"
       },
-      {
-        src: "/android-chrome-512x512.png",
-        sizes: "512x512",
-        type: "image/png",
-        purpose: "any maskable"
-      }
     ],
     theme_color: "#ffffff",
     background_color: "#fff",
