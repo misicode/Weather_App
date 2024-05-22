@@ -1,7 +1,7 @@
 <!-- PROJECT PRESENTATION -->
 <div align="center">
   <a href="https://github.com/misicode/WeatherApp">
-    <img src="./public/weather.ico" alt="Logo Icon" width="80" height="80">
+    <img src="./public/favicon.ico" alt="Logo Icon" width="80" height="80">
   </a>
 
   <h1 align="center">Weather App</h1>

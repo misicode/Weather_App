@@ -12,7 +12,6 @@ type ForecastProps = {
 
 const Forecast = ({ coords }: ForecastProps) => {
   const forecastData = useForecastData(coords);
-  console.log(forecastData)
 
   if (forecastData) {
     return (
