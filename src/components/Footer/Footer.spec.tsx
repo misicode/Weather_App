@@ -17,7 +17,7 @@ describe("Test <Footer />", () => {
     const credits = screen.getByRole("note");
 
     expect(credits).toBeInTheDocument();
-    expect(credits).toHaveTextContent(`© ${ year } Learning and Programming | Coded by MISICODE`);
+    expect(credits).toHaveTextContent(`${ year } Learning and Programming | Coded by MISICODE`);
 
     expect(screen.getByRole("link")).toHaveAttribute(
       "href", 

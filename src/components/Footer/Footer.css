@@ -1,17 +1,21 @@
-.credits {
+footer {
   color: var(--secondary-color);
   font-size: 12px;
+  justify-content: center;
   margin: 17px 0 0;
   text-align: center;
   width: 80%;
 }
-.credits > a {
+footer > svg {
+  margin-right: 5px;
+}
+footer a {
   color: var(--primary-color);
   font-weight: 600;
   text-decoration: none;
 }
 @media only screen and (max-width: 1200px) {
-  .credits {
+  footer {
     margin-bottom: 40px;
   }
 }
