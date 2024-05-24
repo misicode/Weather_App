@@ -33,7 +33,7 @@ const Weather = ({ defaultCity, date, cardBackground }: WeatherProps) => {
     return (
       <>
         <Alert />
-        <div className={`card ${ cardBackground }`}>
+        <main className={`card ${ cardBackground }`}>
           <section className="weather-today">
             <div className="content h-full">
               <FormatDate date={ weatherData.date } />
@@ -46,7 +46,7 @@ const Weather = ({ defaultCity, date, cardBackground }: WeatherProps) => {
               <Forecast coords={ weatherData.coordinates } />
             </div>
           </section>
-        </div>
+        </main>
         <Footer year={ date.getFullYear() } />
       </>
     );

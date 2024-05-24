@@ -1,7 +1,6 @@
 footer {
   color: var(--secondary-color);
-  font-size: 12px;
-  justify-content: center;
+  font-size: 13px;
   margin: 17px 0 0;
   text-align: center;
   width: 80%;
@@ -16,6 +15,7 @@ footer a {
 }
 @media only screen and (max-width: 1200px) {
   footer {
+    font-size: 12px;
     margin-bottom: 40px;
   }
 }
