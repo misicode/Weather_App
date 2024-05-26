@@ -31,9 +31,8 @@ Aplicación web progresiva (PWA) desarrollada con React que consume la API de [O
 | [![TypeScript][typescript-badge]][typescript-url] | Lenguaje de programación fuertemente tipado para escribir código  | 5.2.2   |
 | [![Jest][jest-badge]][jest-url]                   | Framework de testing para las pruebas unitarias                   | 29.7.0  |
 | [![SonarQube][sonarqube-badge]][sonarqube-url]    | Plataforma para evaluar el código fuente                          | 10.5    |
-| [![NPM][npm-badge]][npm-url]                      | Administrador de paquetes para instalar las dependencias          | 10.5.0   |
+| [![NPM][npm-badge]][npm-url]                      | Administrador de paquetes para instalar las dependencias          | 10.5.0  |
 | [![Visual Studio Code][vsc-badge]][vsc-url]       | Editor de código para el proyecto                                 | 1.89.1  |
-
 
 ### Vista previa
 
@@ -157,7 +156,7 @@ _Desarrollado por_ **Alessandra Mincia**
 <!-- ACKNOWLEDGMENTS -->
 ## 📝 Agradecimientos
 
-La idea de este proyecto surgió como iniciativa del workshop "SheCodes React", de [SheCodes](https://www.shecodes.io). Para obtener más información detallada de este programa visite el siguiente [enlace](https://www.shecodes.io/react).
+La idea de este proyecto surgió como iniciativa del workshop "SheCodes React", de [SheCodes][shecodes-url]. Para obtener más información detallada de este programa visite el siguiente [enlace][shecodes-react-url].
 
 
 <!-- MARKDOWN LINKS -->
@@ -183,3 +182,5 @@ La idea de este proyecto surgió como iniciativa del workshop "SheCodes React", 
 [github-url]: https://github.com/misicode
 [linkedin-badge]: https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=fff
 [linkedin-url]: https://www.linkedin.com/in/misicode
+[shecodes-url]: https://www.shecodes.io
+[shecodes-react-url]: https://www.shecodes.io/react
