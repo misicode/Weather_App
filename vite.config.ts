@@ -3,7 +3,7 @@ import { VitePWA, VitePWAOptions } from "vite-plugin-pwa";
 import react from "@vitejs/plugin-react-swc";
 
 const pwaConfig: Partial<VitePWAOptions> = {
-  registerType: "prompt",
+  registerType: "autoUpdate",
   includeAssets: [
     "favicon.ico",
     "favicon-16x16.png",
@@ -50,6 +50,21 @@ const pwaConfig: Partial<VitePWAOptions> = {
     scope: "/",
     start_url: "/",
     orientation: "portrait"
+  },
+  workbox: {
+    runtimeCaching: [
+      {
+        urlPattern: ({ request }) => request.destination === "image",
+        handler: "CacheFirst",
+        options: {
+          cacheName: "images-cache",
+          expiration: {
+            maxEntries: 10,
+            maxAgeSeconds: 30 * 24 * 60 * 60
+          }
+        }
+      }
+    ]
   },
 };
 

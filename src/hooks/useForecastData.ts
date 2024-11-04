@@ -12,11 +12,11 @@ export const useForecastData = (coords: Coordinates) => {
     if (!list) return;
 
     const filteredList: ForecastDay[] = [];
-    let lastDayKey = new Date().toISOString().split("T")[0];
+    let lastDayKey = (new Date()).toLocaleDateString('en-CA');
 
     for (const item of list) {
       const date = new Date(item.dt * 1000);
-      const dayKey = date.toISOString().split("T")[0];
+      const dayKey = date.toLocaleDateString('en-CA');
 
       if (dayKey !== lastDayKey) {
         filteredList.push(item);

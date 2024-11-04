@@ -156,7 +156,7 @@ _Desarrollado por_ **Alessandra Mincia**
 <!-- ACKNOWLEDGMENTS -->
 ## 📝 Agradecimientos
 
-La idea de este proyecto surgió como iniciativa del workshop "SheCodes React", de [SheCodes][shecodes-url]. Para obtener más información detallada de este programa visite el siguiente [enlace][shecodes-react-url].
+La idea de este proyecto surgió como iniciativa del workshop "SheCodes React", de [SheCodes][shecodes-url].
 
 
 <!-- MARKDOWN LINKS -->
@@ -183,4 +183,3 @@ La idea de este proyecto surgió como iniciativa del workshop "SheCodes React", 
 [linkedin-badge]: https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=fff
 [linkedin-url]: https://www.linkedin.com/in/misicode
 [shecodes-url]: https://www.shecodes.io
-[shecodes-react-url]: https://www.shecodes.io/react
