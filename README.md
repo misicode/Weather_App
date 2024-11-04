@@ -1,6 +1,6 @@
 <!-- PROJECT PRESENTATION -->
 <div align="center">
-  <a href="https://github.com/misicode/WeatherApp">
+  <a href="https://github.com/misicode/Weather_App">
     <img src="./public/favicon.ico" alt="Logo Icon" width="80" height="80">
   </a>
 
@@ -10,9 +10,9 @@
     <span>Aplicación de pronóstico del clima</span><br>
     <a href="https://misicode-weather.netlify.app">Ver Demo</a>
     |
-    <a href="https://github.com/misicode/WeatherApp/issues">Reportar Bug</a>
+    <a href="https://github.com/misicode/Weather_App/issues">Reportar Bug</a>
     |
-    <a href="https://github.com/misicode/WeatherApp/issues">Solicitar Feature</a>
+    <a href="https://github.com/misicode/Weather_App/issues">Solicitar Feature</a>
   </p>
 </div><br>
 
@@ -26,13 +26,13 @@ Aplicación web progresiva (PWA) desarrollada con React que consume la API de [O
 
 | Herramienta                                       | Descripción                                                       | Versión |
 | ------------------------------------------------- | ----------------------------------------------------------------- | ------- |
-| [![React][react-badge]][react-url]                | Biblioteca de JavaScript para construir las interfaces de usuario | 18.2.0  |
-| [![Vite][vite-badge]][vite-url]                   | Herramienta de Frontend para construir el proyecto                | 5.2.0   |
-| [![TypeScript][typescript-badge]][typescript-url] | Lenguaje de programación fuertemente tipado para escribir código  | 5.2.2   |
+| [![React][react-badge]][react-url]                | Biblioteca de JavaScript para construir las interfaces de usuario | 18.3.1  |
+| [![Vite][vite-badge]][vite-url]                   | Herramienta de Frontend para construir el proyecto                | 5.4.10  |
+| [![TypeScript][typescript-badge]][typescript-url] | Lenguaje de programación fuertemente tipado para escribir código  | 5.6.2   |
 | [![Jest][jest-badge]][jest-url]                   | Framework de testing para las pruebas unitarias                   | 29.7.0  |
 | [![SonarQube][sonarqube-badge]][sonarqube-url]    | Plataforma para evaluar el código fuente                          | 10.5    |
 | [![NPM][npm-badge]][npm-url]                      | Administrador de paquetes para instalar las dependencias          | 10.5.0  |
-| [![Visual Studio Code][vsc-badge]][vsc-url]       | Editor de código para el proyecto                                 | 1.89.1  |
+| [![Visual Studio Code][vsc-badge]][vsc-url]       | Editor de código para el proyecto                                 | 1.95.1  |
 
 ### Vista previa
 
@@ -66,7 +66,7 @@ Visual Studio Code
 2. Descargue o clone este repositorio.
 
    ```sh
-   git clone https://github.com/misicode/WeatherApp.git
+   git clone https://github.com/misicode/Weather_App.git
    ```
 
 3. Instale todos los paquetes NPM.

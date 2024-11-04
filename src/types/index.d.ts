@@ -13,9 +13,8 @@ export interface Weather {
 export interface ForecastDay {
   dt: number;
   weather: Climate[];
-  temp: Temperature;
-  humidity: number;
-  wind_speed: number;
+  main: Temperature;
+  wind: Wind;
 };
 
 export interface Coordinates {
@@ -29,9 +28,14 @@ interface Climate {
 };
 
 interface Temperature {
-  min: number;
-  max: number;
+  humidity: number;
+  temp_min: number;
+  temp_max: number;
 };
+
+interface Wind {
+  speed: number;
+}
 
 export interface StringMap {
   [key: string]: string;

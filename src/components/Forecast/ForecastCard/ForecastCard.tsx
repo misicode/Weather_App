@@ -10,7 +10,7 @@ type ForecastProps = {
 };
 
 const ForecastCard = ({
-  data: { dt, weather, temp, humidity, wind_speed },
+  data: { dt, weather, main, wind },
 }: ForecastProps) => {
   const day = new Date(dt * 1000);
 
@@ -21,18 +21,18 @@ const ForecastCard = ({
         <div className="flex-center">
           <WeatherIcon code={ weather[0].icon } size={ 35 } />
           <div>
-            <p className="temp-max" role="note">{ temp.max }°</p>
-            <p className="temp-min" role="note">{ temp.min }°</p>
+            <p className="temp-max" role="note">{ main.temp_max }°</p>
+            <p className="temp-min" role="note">{ main.temp_min }°</p>
           </div>
         </div>
         <p className="clim-week" role="note">{ weather[0].main }</p>
         <div className="forecast-details">
           <hr />
           <p role="note">
-            Humidity: <span className="humi-week">{ humidity } %</span>
+            Humidity: <span className="humi-week">{ main.humidity } %</span>
           </p>
           <p role="note">
-            Wind: <span className="wind-week">{ wind_speed } km/h</span>
+            Wind: <span className="wind-week">{ wind.speed } km/h</span>
           </p>
         </div>
       </div>

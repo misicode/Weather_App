@@ -16,17 +16,15 @@ const Forecast = ({ coords }: ForecastProps) => {
   if (forecastData) {
     return (
       <div className="content-week">
-        {forecastData.map((day: ForecastDay, index: number) => {
-          if (index > 0 && index < 7) {
+        {
+          forecastData.map((day: ForecastDay, index: number) => {
             return (
               <div className="forecast-card" key={ day.dt } data-testid={`forecast-group-${ index }`}>
                 <ForecastCard data={ day } />
               </div>
             );
-          } else {
-            return null;
-          }
-        })}
+          })
+        }
       </div>
     );
   }

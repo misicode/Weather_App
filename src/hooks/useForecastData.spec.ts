@@ -21,7 +21,7 @@ describe("Test custom hook useForecastData", () => {
   test("Should create the initial state with forecastData", async() => {
     jest
       .spyOn(GetWeather, "searchForecast")
-      .mockResolvedValue({ daily: forecastData });
+      .mockResolvedValue({ list: forecastData });
 
     await act(async () => {
       hook = renderHook(() => useForecastData(coords));
@@ -33,7 +33,7 @@ describe("Test custom hook useForecastData", () => {
   test("Should create the initial state without forecastData", async() => {
     jest
       .spyOn(GetWeather, "searchForecast")
-      .mockResolvedValue({ daily: undefined });
+      .mockResolvedValue({ list: undefined });
 
     await act(async () => {
       hook = renderHook(() => useForecastData(coords));

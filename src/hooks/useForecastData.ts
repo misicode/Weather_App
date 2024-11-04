@@ -7,11 +7,24 @@ export const useForecastData = (coords: Coordinates) => {
   const [forecastData, setForecastData] = useState<ForecastDay[]>();
 
   const getForecast = async () => {
-    const { daily } = await searchForecast(coords);
+    const { list } = await searchForecast(coords);
 
-    if (!daily) return;
+    if (!list) return;
 
-    setForecastData(daily);
+    const filteredList: ForecastDay[] = [];
+    let lastDayKey = new Date().toISOString().split("T")[0];
+
+    for (const item of list) {
+      const date = new Date(item.dt * 1000);
+      const dayKey = date.toISOString().split("T")[0];
+
+      if (dayKey !== lastDayKey) {
+        filteredList.push(item);
+        lastDayKey = dayKey;
+      }
+    }
+
+    setForecastData(filteredList);
   };
 
   useEffect(() => {

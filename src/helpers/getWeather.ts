@@ -31,7 +31,7 @@ export const searchWeatherByCoords = async (coords: Coordinates) => {
 
 export const searchForecast = async (coords: Coordinates) => {
   try {
-    const { data } = await api.get(`onecall?lat=${coords.lat}&lon=${coords.lon}&exclude=minutely,hourly&appid=${import.meta.env.VITE_OPENWEATHER_API_KEY}&units=metric`);
+    const { data } = await api.get(`forecast?lat=${coords.lat}&lon=${coords.lon}&appid=${import.meta.env.VITE_OPENWEATHER_API_KEY}&units=metric`);
     return data;
   } catch (err) {
     if (err.response.status === 404) {

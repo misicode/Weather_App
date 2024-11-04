@@ -7,9 +7,8 @@ describe("Test <ForecastCard />", () => {
   const data: ForecastDay = {
     dt: 1682874000,
     weather: [{ main: "Clouds", icon: "04d" }],
-    temp: { min: 21.31, max: 23.28},
-    humidity: 80,
-    wind_speed: 4.35,
+    main: { humidity: 80, temp_min: 21.31, temp_max: 23.28},
+    wind: { speed: 4.35 },
   };
 
   beforeEach(() => {
